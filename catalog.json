@@ -1,0 +1,626 @@
+{
+    "jeans": [{
+            "name": "ДЖИНСЫ LEVI'S SKATEBOARDING SKATE 501 SE STF HOMEWOOD",
+            "currentPrice": 3590.00,
+            "previousPrice": 7180.00,
+            "categories": "jeans",
+            "imageUrls": ["https://res.cloudinary.com/drquxwfcx/image/upload/v1618504873/catalog/jeans/1/_levi_s_skateboarding_skate_501_se_stf_homewood1_zssnk9.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504871/catalog/jeans/1/_levi_s_skateboarding_skate_501_se_stf_homewood2_pwrip8.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504872/catalog/jeans/1/_levi_s_skateboarding_skate_501_se_stf_homewood6_u8yivc.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504871/catalog/jeans/1/_levi_s_skateboarding_skate_501_se_stf_homewood4_ddmkoy.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504871/catalog/jeans/1/_levi_s_skateboarding_skate_501_se_stf_homewood3_s832mf.jpg"],
+            "quantity": 5,
+            "color": "blue",
+            "brand": "Levi's Skateboarding",
+            "parametrs": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa neque autem itaque voluptas, aperiam ducimus ipsum architecto, maxime dignissimos quo nisi ipsa fuga unde modi recusandae corrupti? Iste, voluptatibus reprehenderit!"],
+            "description": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa neque autem itaque voluptas, aperiam ducimus ipsum architecto, maxime dignissimos quo nisi ipsa fuga unde modi recusandae corrupti? Iste, voluptatibus reprehenderit!"]
+        },
+        {
+            "name": "ДЖИНСЫ LEVI'S SKATEBOARDING SKATE BAGGY 5 POCKET SE BIG BEAR",
+            "currentPrice": 3590.00,
+            "previousPrice": 7180.00,
+            "categories": "jeans",
+            "imageUrls": ["https://res.cloudinary.com/drquxwfcx/image/upload/v1618504872/catalog/jeans/2/_levi_s_skateboarding_skate_baggy_5_pocket_se_big_bear1_hlihqv.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504872/catalog/jeans/2/_levi_s_skateboarding_skate_baggy_5_pocket_se_big_bear2_q0bpj6.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504872/catalog/jeans/2/_levi_s_skateboarding_skate_baggy_5_pocket_se_big_bear6_qacipi.jpg"],
+            "quantity": 7,
+            "color": "blue",
+
+            "brand": "Levi's Skateboarding",
+            "parametrs": ["Материал: 83% хлопок, 15% полиамид, 2% эластан Страна-производитель: Бангладеш"],
+            "description": ["Levi's - легендарный бренд, который подарил миру первые джинсы и стал настоящей иконой американской культуры. Начиная с 1853 года и на каждом витке своей истории - инновации и качество оставались и продолжаются оставаться в основе идеологии бренда."]
+        },
+        {
+            "name": "ДЖИНСЫ LEVI'S SKATEBOARDING SKATE BAGGY 5 POCKET SE BAKER",
+            "currentPrice": 3590.00,
+            "previousPrice": 7180.00,
+            "categories": "jeans",
+            "imageUrls": ["https://res.cloudinary.com/drquxwfcx/image/upload/v1618504873/catalog/jeans/3/_levi_s_skateboarding_skate_baggy_5_pocket_se_baker0_nmuul6.png", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504869/catalog/jeans/3/_levi_s_skateboarding_skate_baggy_5_pocket_se_baker5_v8ht83.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504869/catalog/jeans/3/_levi_s_skateboarding_skate_baggy_5_pocket_se_baker1_afbtt0.jpg"],
+            "quantity": 10,
+            "color": "blue",
+
+            "brand": "Levi's Skateboarding",
+            "parametrs": ["81% хлопок, 15% полиамид, 4% эластан."],
+            "description": ["Коллекция Levi's Skateboarding сочетает в себе классический стиль с превосходной конструкцией, комфортом и долговечностью для нужд современного скейтборд-сообщества. Эти джинсы с современным мешковатым силуэтом и отсылкой к винтажному стилю отличаются повышенным комфортом и долговечностью."]
+        },
+        {
+            "name": "ДЖИНСЫ LEVI'S SKATEBOARDING SKATE 501 SE STF INDIGO WARP",
+            "currentPrice": 1999.00,
+            "previousPrice": 4200.00,
+            "categories": "jeans",
+            "imageUrls": ["https://res.cloudinary.com/drquxwfcx/image/upload/v1618504869/catalog/jeans/4/_levi_s_skateboarding_skate_501_se_stf_indigo_warp_rdpr9g.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504870/catalog/jeans/4/_levi_s_skateboarding_skate_501_se_stf_indigo_warp2_jzmix4.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504871/catalog/jeans/4/_levi_s_skateboarding_skate_501_se_stf_indigo_warp4_pcxibv.jpg"],
+            "quantity": 15,
+            "color": "black",
+            "brand": "Levi's Skateboarding",
+            "parametrs": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa neque autem itaque voluptas, aperiam ducimus ipsum architecto, maxime dignissimos quo nisi ipsa fuga unde modi recusandae corrupti? Iste, voluptatibus reprehenderit!"],
+            "description": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa neque autem itaque voluptas, aperiam ducimus ipsum architecto, maxime dignissimos quo nisi ipsa fuga unde modi recusandae corrupti? Iste, voluptatibus reprehenderit!"]
+        },
+        {
+            "name": "ДЖИНСЫ LEVI'S SKATEBOARDING SKATE 511 SLIM 5 POCKET SE CAVIAR",
+            "currentPrice": 3199.00,
+            "previousPrice": 6389.00,
+            "categories": "jeans",
+            "imageUrls": ["https://res.cloudinary.com/drquxwfcx/image/upload/v1618504872/catalog/jeans/5/_levi_s_skateboarding_skate_511_slim_5_pocket_se_caviar_jesgys.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504869/catalog/jeans/5/_levi_s_skateboarding_skate_511_slim_5_pocket_se_caviar2_w0sfti.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504869/catalog/jeans/5/_levi_s_skateboarding_skate_511_slim_5_pocket_se_caviar4_ybzm4t.jpg"],
+            "quantity": 6,
+            "color": "black",
+            "brand": "Levi's Skateboarding",
+            "parametrs": ["Мужские джинсы Levi's 511 изготовлены из хлопка с добавлением эластана (98% хлопок, 2% эластан). "],
+            "description": ["В местах наибольшего износа швы укреплены, задние карманы из двойной ткани. Модель прямого кроя, специально созданная для скейтбординга и активных занятий спортом."]
+        }, {
+            "name": "ДЖИНСЫ LEVI'S SKATEBOARDING SKATE 511 SLIM 5 POCKET S&E PSK INDIGO WARP RINSE",
+            "currentPrice": 2990.00,
+            "previousPrice": 6000.00,
+            "categories": "jeans",
+            "imageUrls": ["https://res.cloudinary.com/drquxwfcx/image/upload/v1618504871/catalog/jeans/6/levis-skate-511-slim-5-pocket-jeans-psk-indigo-warp-rinse-clothing-rollersnakes_815_dczyic.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504870/catalog/jeans/6/levis-skate-511-slim-5-pocket-jeans-psk-indigo-warp-rinse-clothing-rollersnakes_423_auxwbx.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504871/catalog/jeans/6/levis-skate-511-slim-5-pocket-jeans-psk-indigo-warp-rinse-clothing-rollersnakes_235_twoo3f.jpg"],
+            "quantity": 12,
+            "color": "black",
+            "brand": "Levi's Skateboarding",
+            "parametrs": ["Мужские джинсы Levi's 511 изготовлены из хлопка с добавлением полиамида и эластана. "],
+            "description": ["В местах наибольшего износа швы укреплены, задние карманы из двойной ткани. Модель прямого кроя, специально созданная для скейтбординга и активных занятий спортом."]
+        }
+    ],
+    "shirt": [{
+        "name": "РУБАШКА MAKIA HARPER OVERSHIRT THYME",
+        "currentPrice": 2999.00,
+        "previousPrice": 5998.00,
+        "categories": "shirt",
+        "imageUrls": [
+            "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504632/catalog/shirt/1/1_ajnwdd.jpg",
+            "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504633/catalog/shirt/1/2_o99aph.jpg",
+            "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504633/catalog/shirt/1/3_jpy5i5.jpg"
+        ],
+        "quantity": 50,
+        "color": "green",
+        "productUrl": "/shirt",
+        "brand": "MAKIA",
+        "parametrs": [],
+        "description": [
+            "Рубашка с двумя нагрудными карманами. Состав: 100% хлопок"
+        ]
+    },
+        {
+            "name": "РУБАШКА MAKIA HARPER OVERSHIRT DARK NAVY",
+            "currentPrice": 2999.00,
+            "previousPrice": 5998.00,
+            "categories": "shirt",
+            "imageUrls": [
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504944/catalog/shirt/2/_makia_harper_overshirt_dark_navy1_va4rit.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504944/catalog/shirt/2/_makia_harper_overshirt_dark_navy4_qulzr9.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504944/catalog/shirt/2/_makia_harper_overshirt_dark_navy2_zzwnaf.jpg"
+            ],
+            "quantity": 40,
+            "color": "blue",
+            "productUrl": "/shirt",
+            "brand": " MAKIA",
+            "parametrs": [],
+            "description": [
+                "Рубашка с двумя нагрудными карманами. Состав: 100% хлопок"
+            ]
+        },
+        {
+            "name": "РУБАШКА MAKIA FLAGSHIP SHIRT WHITE",
+            "currentPrice": 2099.00,
+            "previousPrice": 4198.00,
+            "categories": "shirt",
+            "imageUrls": [
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618505289/catalog/shirt/3/_makia_flagship_shirt_white_niagkz.jpg"
+            ],
+            "quantity": 100,
+            "color": "white",
+            "productUrl": "/shirt",
+            "brand": "MAKIA",
+            "parametrs": [],
+            "description": [
+                "Рубашка Makia Flagship Shirt - это классическая оксфордская рубашка для повседневных ситуаций. С воротником на пуговицах и нагрудным карманом с надписью он представляет собой сочетание современного и классического образа «меньше - значит лучше»."
+            ]
+        },
+        {
+            "name": "РУБАШКА MAKIA FLAGSHIP SHIRT BLUE",
+            "currentPrice": 2099.00,
+            "previousPrice": 4198.00,
+            "categories": "shirt",
+            "imageUrls": [
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618505704/catalog/shirt/4/_makia_flagship_shirt_blue_1_o2knqf.jpg"
+            ],
+            "quantity": 20,
+            "color": "blue",
+            "productUrl": "/shirt",
+            "brand": "MAKIA ",
+            "parametrs": [],
+            "description": [
+                "Рубашка Makia Flagship Shirt - это классическая оксфордская рубашка для повседневных ситуаций. С воротником на пуговицах и нагрудным карманом с надписью он представляет собой сочетание современного и классического образа «меньше - значит лучше»."
+            ]
+        },
+        {
+            "name": "РУБАШКА DIAMOND SUPPLY CO. MARQUISE OVERSHIRT ORANGE",
+            "currentPrice": 2999.00,
+            "previousPrice": 5998.00,
+            "categories": "shirt",
+            "imageUrls": [
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618505861/catalog/shirt/5/_diamond_supply_co._marquise_overshirt_orange2_izv5yk.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618505861/catalog/shirt/5/_diamond_supply_co._marquise_overshirt_orange_iea0p6.jpg"
+            ],
+            "quantity": 25,
+            "color": "orange",
+            "productUrl": "/shirt",
+            "brand": "DIAMOND",
+            "parametrs": [],
+            "description": [
+                "Куртка из флиса (coach jacket) с застежкой на кнопках спереди; 100% хлопок."
+            ]
+        },
+        {
+            "name": "РУБАШКА HUF HEIGHTS LONG SLEEVE FLANNEL VINTAGE VIOLET",
+            "currentPrice": 2459.00,
+            "previousPrice": 4918.00,
+            "categories": "shirt",
+            "imageUrls": [
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506155/catalog/shirt/6/_huf_heights_long_sleeve_flannel_vintage_violet_roubrg.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506155/catalog/shirt/6/_huf_heights_long_sleeve_flannel_vintage_violet4_knsw8f.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506155/catalog/shirt/6/_huf_heights_long_sleeve_flannel_vintage_violet2_p2ogpl.jpg"
+            ],
+            "quantity": 5,
+            "color": "blue",
+            "productUrl": "/shirt",
+            "brand": "Huf",
+            "parametrs": [],
+            "description": [
+                "Тканая рубашка из 100% хлопковой фланели с длинным рукавом. Внутренний задний потайной карман на шее. Два кармана с клапанами на пуговицах на груди. Застежка на пуговицы спереди и застежка на пуговицы на манжетах. Фирменный узор в клетку. Закругленный край.Тканая этикетка HUF слева на нагрудном кармане"
+            ]
+        },
+        {
+            "name": "РУБАШКА MAKIA FLAGSHIP SHIRT RED",
+            "currentPrice": 1199.00,
+            "previousPrice": 1398.00,
+            "categories": "shirt",
+            "imageUrls": [
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506388/catalog/shirt/7/m60100_4515_uavrws.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506388/catalog/shirt/7/m60100_4511_arjiff.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506388/catalog/shirt/7/m60100_4512_td64j2.jpg"
+            ],
+            "quantity": 14,
+            "color": "pink",
+            "productUrl": "/shirt",
+            "brand": "MAKIA",
+            "parametrs": [],
+            "description": [
+                "Повседневная рубашка Makia Convoy. Свободный силуэт, анатомичный крой рукава. Состав- 100% хлопок"
+            ]
+        },
+        {
+            "name": "РУБАШКА DIAMOND SUPPLY CO. DMND X CHEVELLE SUPER SPORT WOVEN NAVY",
+            "currentPrice": 1449.00,
+            "previousPrice": 2898.00,
+            "categories": "shirt",
+            "imageUrls": [
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506565/catalog/shirt/8/diamond_x_chevelle-30_2000x_f6pufg.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506565/catalog/shirt/8/diamond_x_chevelle-31_2000x_phgfvk.jpg"
+            ],
+            "quantity": 4,
+            "color": "black",
+            "productUrl": "/shirt",
+            "brand": "DIAMOND",
+            "parametrs": [],
+            "description": [
+                "Свежая коллаборация американского стритвир-бренда Diamond Supply и Chevrolet- Dmnd X Chevelle."
+            ]
+        }
+    ],
+    "hoodie": [
+        {
+            "name": "ХУДИ LEVI'S SKATEBOARDING SKATE PULLOVER HOODIE POPPY RED",
+            "currentPrice": 2690.00,
+            "previousPrice": 5380.00,
+            "categories": "hoodie",
+            "imageUrls":[
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/l/_levi_s_skateboarding_skate_pullover_hoodie_poppy_red1.jpg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/l/_levi_s_skateboarding_skate_pullover_hoodie_poppy_red3.jpg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/l/_levi_s_skateboarding_skate_pullover_hoodie_poppy_red2.jpg"
+            ],
+            "quantity": 2,
+            "color": "red",
+            "productUrl":"/hudi",
+            "brand":" Levi's Skateboarding",
+            "parametrs":["88% хлопок, 12% полиэстер", "Регулируемый капюшон на шнурке", "Карман впереди", "Тканая этикетка", "Ребристые манжеты и низ", "Обычная посадка"],
+            "description":["The history of the SHIFT store is already 10 years old, and we started making our own merchandise in 2018. ",  
+              "By releasing clothes under our own brand, we do not seek to reinvent the wheel, but offer what we wear ourselves."]
+        },
+        {
+            "name": "ХУДИ DIAMOND SUPPLY CO. COLLEGIATE HOODIE TEAL",
+            "currentPrice": 2799.00,
+            "previousPrice": 5598.00,
+            "categories": "hoodie",
+            "imageUrls":[
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/d/_diamond_supply_co._collegiate_hoodie_teal1.jpg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/d/_diamond_supply_co._collegiate_hoodie_teal5_1.jpg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/d/_diamond_supply_co._collegiate_hoodie_teal2_1.jpg"
+            ],
+            "quantity": 8,
+            "color": "blue",
+            "productUrl":"/hudi",
+            "brand":" DIAMOND",
+            "parametrs":["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur delectus doloremque eos fugiat neque officiis porro praesentium suscipit voluptas voluptatibus."],
+            "description":[ "This company appeared originally as a skateboarding magazine created in San Francisco, it covered various news, reviews, various photos and much more. ",  
+              "It appeared already in 1981 and was founded by three guys - Kevin Thatcher, Eric Swenson, and Fausto Vitello. The magazine still exists, and there is also an Internet version of it."]
+        },
+        {
+            "name": "ХУДИ MAKIA BRAND HOODED SWEATSHIRT BLACK",
+            "currentPrice": 2999.00,
+            "previousPrice": 5998.00,
+            "categories": "hoodie",
+            "imageUrls":[
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/m/_makia_brand_hooded_sweatshirt_black1.jpg"
+            ],
+            "quantity": 4,
+            "color": "black",
+            "productUrl":"/hudi",
+            "brand":"MAKIA",
+            "parametrs":["Black hat with embroidery.", "Composition: 100% acrylic.", "Hat 47 Brand Haymaker Detroit Tigers Black is the best option for everyday wear, outdoor activities in the cold season."],
+            "description":[ "Apparel and accessories brand 47 Brand is known primarily as the official partner for branded jerseys and caps of the major American sports leagues: baseball Mlb, football Nfl, basketball Nba and hockey Nhl, as well as more than 900 college teams. ",  
+              "The founders of the brand are twins Arthur and Henry D Angelo - Italian immigrants, who opened their company in 1947, from the very beginning putting on sports and selling snacks and branded souvenirs at sports events at Fenway Park Stadium in Boston. ",  "Ambition, work and love for the world of sports have led 47 to launch their own clothing line for sports fans as well as street style and American connoisseurs."]
+        },
+        {
+            "name": "ХУДИ MAKIA BOLTON HOODED SWEATSHIRT LIGHT GREEN",
+            "currentPrice": 2999.00,
+            "previousPrice": 5998.00,
+            "categories": "hoodie",
+            "imageUrls":[
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/m/_makia_bolton_hooded_sweatshirt_light_green1.jpg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/m/_makia_bolton_hooded_sweatshirt_light_green3.jpg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/m/_makia_bolton_hooded_sweatshirt_light_green2.jpg"
+            ],
+            "quantity": 1,
+            "color": "green",
+            "productUrl":"/hudi",
+            "brand":"MAKIA",
+            "parametrs":["From dawn to dusk, our classic Logo Box beanie with cuffs will keep you warm. The acrylic yarn is stretchy but surprisingly soft so it won't get out of shape or make you scratch your head.", "Material: 100% acrylic"],
+            "description":["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, eligendi."]
+        },
+        {
+            "name": "ХУДИ DIAMOND SUPPLY CO. LOGO HOODIE PURPLE",
+            "currentPrice": 2799.00,
+            "previousPrice": 5598.00,
+            "categories": "hoodie",
+            "imageUrls":[
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/d/_diamond_supply_co._logo_hoodie_purple01.jpg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/d/_diamond_supply_co._logo_hoodie_purple3.jpg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/d/_diamond_supply_co._logo_hoodie_purple02.jpg"
+            ],
+            "quantity": 9,
+            "color": "purple",
+            "productUrl":"/hats",
+            "brand":"DIAMOND",
+            "parametrs":["Hat with a lapel made of acrylic fabric and wool, which protects well from cold, wind and moisture.", "The basic silhouette is complemented by a brand logo patch."],
+            "description":[ "The American brand Nixon pleases its customers with a variety of not only high-quality clothes, but also the production of watches and other accessories!",  
+              "This brand is very popular among young people, namely those who love and devote their free time to sports."]
+        },
+        {
+            "name": "ХУДИ THE NORTH FACE FINE HOODIE WROUGHT IRON",
+            "currentPrice": 3299.00,
+            "previousPrice": 6598.00,
+            "categories": "hoodie",
+            "imageUrls":[
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/n/f/nf0a55uvhdf11.jpeg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/n/f/nf0a55uvhdf12.jpeg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/t/_the_north_face_fine_hoodie_wrought_iron3.jpeg"
+            ],
+            "quantity": 3,
+            "color": "gray",
+            "productUrl":"/hudi",
+            "brand":"The North Face",
+            "parametrs":["Hat with a lapel made of acrylic fabric and wool, which protects well from cold, wind and moisture.", "The basic silhouette is complemented by a brand logo patch."],
+            "description":[ "The American brand Nixon pleases its customers with a variety of not only high-quality clothes, but also the production of watches and other accessories!",
+                "This brand is very popular among young people, namely those who love and devote their free time to sports."]
+        },
+        {
+            "name": "ХУДИ DIAMOND SUPPLY CO. MONARCH HOODIE MILITARY GREEN",
+            "currentPrice": 2299.00,
+            "previousPrice": 4598.00,
+            "categories": "hoodie",
+            "imageUrls":[
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/d/_diamond_supply_co._monarch_hoodie_military_green.jpg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/d/_diamond_supply_co._monarch_hoodie_military_green2.jpg"
+            ],
+            "quantity": 10,
+            "color": "green",
+            "productUrl":"/hudi",
+            "brand":"DIAMOND",
+            "parametrs":["Hat with a lapel made of acrylic fabric and wool, which protects well from cold, wind and moisture.", "The basic silhouette is complemented by a brand logo patch."],
+            "description":[ "The American brand Nixon pleases its customers with a variety of not only high-quality clothes, but also the production of watches and other accessories!",
+                "This brand is very popular among young people, namely those who love and devote their free time to sports."]
+        },
+        {
+            "name": "ХУДИ THRASHER RAINBOW MAG HOOD BLACK",
+            "currentPrice": 2249.00,
+            "previousPrice": 4498.00,
+            "categories": "hoodie",
+            "imageUrls":[
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/t/h/thrasher_rainbow_mag_hood_black1.jpg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/t/h/thrasher_rainbow_mag_hood_black4.jpg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/t/h/thrasher_rainbow_mag_hood_black2.jpg"
+            ],
+            "quantity": 7,
+            "color": "black",
+            "productUrl":"/hudi",
+            "brand":"THRASHER",
+            "parametrs":["Худи Thrasher с центральным карманом. На груди принт логотипа с разноцветными буквами.Материалы: 90% хлопок, 10% полиэстер."],
+            "description":[ "The American brand Nixon pleases its customers with a variety of not only high-quality clothes, but also the production of watches and other accessories!",
+                "This brand is very popular among young people, namely those who love and devote their free time to sports."]
+        },
+        {
+            "name": "ХУДИ THRASHER BLACK ICE HOOD BLACK",
+            "currentPrice": 2249.00,
+            "previousPrice": 4498.00,
+            "categories": "hoodie",
+            "imageUrls":[
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/t/_thrasher_black_ice_hood_black1.jpg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/t/_thrasher_black_ice_hood_black2.jpg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/t/_thrasher_black_ice_hood_black3.jpg"
+            ],
+            "quantity": 5,
+            "color": "black",
+            "productUrl":"/hudi",
+            "brand":"THRASHER",
+            "parametrs":["Худи Thrasher с центральным карманом. На груди - принт логотипа в виде ледяной глыбы.", "Материалы: 90% хлопок, 10% полиэстер. "],
+            "description":[ "The American brand Nixon pleases its customers with a variety of not only high-quality clothes, but also the production of watches and other accessories!",
+                "This brand is very popular among young people, namely those who love and devote their free time to sports."]
+        },
+        {
+            "name": "ХУДИ THRASHER DIAMOND LOGO HOOD GOLD",
+            "currentPrice": 2249.00,
+            "previousPrice": 4498.00,
+            "categories": "hoodie",
+            "imageUrls":[
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/t/_thrasher_diamond_logo_hood_gold1.jpg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/t/_thrasher_diamond_logo_hood_gold2.jpg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/t/_thrasher_diamond_logo_hood_gold3.jpg"
+            ],
+            "quantity": 6,
+            "color": "orange",
+            "productUrl":"/hudi",
+            "brand":"DIAMOND",
+            "parametrs":["Худи Thrasher с центральным карманом и принтом логотипа на груди. Материалы: 50% хлопок, 50% полиэстер."],
+            "description":[ "The American brand Nixon pleases its customers with a variety of not only high-quality clothes, but also the production of watches and other accessories!",
+                "This brand is very popular among young people, namely those who love and devote their free time to sports."]
+        }
+    ],
+    "jacket": [
+        {
+            "name": "Overshirt Black",
+            "currentPrice": 3500.00,
+            "previousPrice": 7000.00,
+            "categories": "jacket",
+            "imageUrls": [
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504497/catalog/jacket/dobby_black_shirt_ntaseq.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618505147/catalog/jacket/dobby_black_shirt_detail_xpqx3g.jpg"
+            ],
+            "quantity": 10,
+            "color": "black",
+            "productUrl": "/jacket",
+            "brand": "  Victoria HK",
+            "parametrs": [
+                "S",
+                "M",
+                "L"
+            ],
+            "description": [
+                "121-301-BLK"
+            ]
+        },
+        {
+            "name": "DIAMOND SUPPLY CO. MARQUISE REVERSIBLE POLAR FLEECE MULTI",
+            "currentPrice": 3300.00,
+            "previousPrice": 6600.00,
+            "categories": "jacket",
+            "imageUrls": [
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504497/catalog/jacket/_diamond_supply_co._marquise_reversible_polar_fleece_multi1_cqyk8d.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504497/catalog/jacket/_diamond_supply_co._marquise_reversible_polar_fleece_multi_o1rggv.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618505656/catalog/jacket/_diamond_supply_co._marquise_reversible_polar_fleece_multi2_fb2uyn.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618505656/catalog/jacket/_diamond_supply_co._marquise_reversible_polar_fleece_multi3_tbo3ie.jpg"
+            ],
+            "quantity": 10,
+            "color": "blue",
+            "productUrl": "/jacket",
+            "brand": " DIAMOND",
+            "parametrs": [
+                "M",
+                "L"
+            ],
+            "description": [
+                "Двусторонняя куртка из нейлона/флиса с логотипом на левом нагрудном кармане, резиновая нашивка на левом рукаве, 100% хлопок."
+            ]
+        },
+        {
+            "name": "DIAMOND SUPPLY CO. MARQUISE REVERSIBLE POLAR FLEECE BLACK",
+            "currentPrice": 3300.00,
+            "previousPrice": 6600.00,
+            "categories": "jacket",
+            "imageUrls": [
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504496/catalog/jacket/_diamond_supply_co._marquise_reversible_polar_fleece_black_ynlapo.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618505834/catalog/jacket/_diamond_supply_co._marquise_reversible_polar_fleece_black4_emyo44.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618505834/catalog/jacket/_diamond_supply_co._marquise_reversible_polar_fleece_black3_qijz7d.jpg"
+            ],
+            "quantity": 10,
+            "color": "black",
+            "productUrl": "/jacket",
+            "brand": " DIAMOND",
+            "parametrs": [
+                "S"
+            ],
+            "description": [
+                "Двусторонняя куртка из нейлона/флиса с логотипом на левом нагрудном кармане, резиновая нашивка на левом рукаве, 100% хлопок."
+            ]
+        },
+        {
+            "name": "РУБАШКА DIAMOND SUPPLY CO. MARQUISE OVERSHIRT ORANGE",
+            "currentPrice": 3000.00,
+            "previousPrice": 6000.00,
+            "categories": "jacket",
+            "imageUrls": [
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504496/catalog/jacket/_diamond_supply_co._marquise_overshirt_orange_rgocca.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504496/catalog/jacket/_diamond_supply_co._marquise_overshirt_orange2_itw5ct.jpg"
+            ],
+            "quantity": 10,
+            "color": "orange",
+            "productUrl": "/jacket",
+            "brand": " DIAMOND",
+            "parametrs": [
+                "S",
+                "M"
+            ],
+            "description": [
+                "Куртка из флиса (coach jacket) с застежкой на кнопках спереди, 100% хлопок."
+            ]
+        },
+        {
+            "name": "КУРТКА RIPNDIP NEO NERM REVERSIBLE FIELD PUFFER JACKET BLACK & TONAL GREEN",
+            "currentPrice": 4000.00,
+            "previousPrice": 8000.00,
+            "categories": "jacket",
+            "imageUrls": [
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504496/catalog/jacket/_ripndip_neo_nerm_reversible_field_puffer_jacket_black_tonal_green_dpeoj3.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506196/catalog/jacket/_ripndip_neo_nerm_reversible_field_puffer_jacket_black_tonal_green5_x3z4xb.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506196/catalog/jacket/_ripndip_neo_nerm_reversible_field_puffer_jacket_black_tonal_green6_ngllsm.jpg"
+            ],
+            "quantity": 10,
+            "color": [
+                "black",
+                "green"
+            ],
+            "productUrl": "/jacket",
+            "brand": " RIPNDIP",
+            "parametrs": [
+                "S",
+                "M"
+            ],
+            "description": [
+                "Двусторонняя водонепроницаемая куртка-пуховик, днотонный черный и зеленый камуфляж, 2 кармана спереди, графика спереди и сзади на обеих сторонах"
+            ]
+        },
+        {
+            "name": "КУРТКА ELLESSE ILLO PADDED JACKET BLACK",
+            "currentPrice": 1800.00,
+            "previousPrice": 3600.00,
+            "categories": "jacket",
+            "imageUrls": [
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504496/catalog/jacket/_ellesse_illo_padded_jacket_black1_unvnln.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506560/catalog/jacket/_ellesse_illo_padded_jacket_black5_rsktxw.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506560/catalog/jacket/_ellesse_illo_padded_jacket_black2_jouix1.jpg"
+            ],
+            "quantity": 10,
+            "color": "black",
+            "productUrl": "/jacket",
+            "brand": " ELLESSE ",
+            "parametrs": [
+                "L",
+                "M"
+            ],
+            "description": [
+                "Утепленная куртка Illo. Независимо от погоды, вы будете готовы к выходу. Ткань: 100% микрополиэстер, принт ellesse на груди и тканый язычок на манжете, значок ellesse из ТПУ с силиконом и светоотражающим принтом на рукаве, тканая светоотражающая вставка на груди, застежка-молния по всей длине с логотипом Semi Palla, два скрытых боковых кармана"
+            ]
+        },
+        {
+            "name": "КУРТКА ELLESSE MAZZO PARKA JACKET REFLECTIVE",
+            "currentPrice": 3300.00,
+            "previousPrice": 6600.00,
+            "categories": "jacket",
+            "imageUrls": [
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506683/catalog/jacket/_ellesse_mazzo_parka_jacket_reflective1_ly20dv.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506683/catalog/jacket/_ellesse_mazzo_parka_jacket_reflective2_po4mq8.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506683/catalog/jacket/_ellesse_mazzo_parka_jacket_reflective5_rie4ao.jpg"
+            ],
+            "quantity": 10,
+            "color": "gray",
+            "productUrl": "/jacket",
+            "brand": " ELLESSE ",
+            "parametrs": [
+                "S",
+                "M"
+            ],
+            "description": [
+                "Утепленная куртка Illo. Независимо от погоды, вы будете готовы к выходу. Ткань: 100% микрополиэстер, принт ellesse на груди и тканый язычок на манжете, значок ellesse из ТПУ с силиконом и светоотражающим принтом на рукаве, тканая светоотражающая вставка на груди, застежка-молния по всей длине с логотипом Semi Palla, два скрытых боковых кармана"
+            ]
+        },
+        {
+            "name": "КУРТКА ELLESSE MAZZO PARKA JACKET BLACK",
+            "currentPrice": 2800.00,
+            "previousPrice": 4600.00,
+            "categories": "jacket",
+            "imageUrls": [
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506810/catalog/jacket/_ellesse_mazzo_parka_jacket_black1_njo4sr.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506810/catalog/jacket/_ellesse_mazzo_parka_jacket_black5_dcopof.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506810/catalog/jacket/_ellesse_mazzo_parka_jacket_black2_nocurs.jpg"
+            ],
+            "quantity": 10,
+            "color": "black",
+            "productUrl": "/jacket",
+            "brand": " ELLESSE ",
+            "parametrs": [
+                "M"
+            ],
+            "description": [
+                "Утепленная куртка Illo. Независимо от погоды, вы будете готовы к выходу. Ткань: 100% микрополиэстер, принт ellesse на груди и тканый язычок на манжете, значок ellesse из ТПУ с силиконом и светоотражающим принтом на рукаве, тканая светоотражающая вставка на груди, застежка-молния по всей длине с логотипом Semi Palla, два скрытых боковых кармана"
+            ]
+        },
+        {
+            "name": "КУРТКА ELLESSE REIDI JACKET BLUE",
+            "currentPrice": 1800.00,
+            "previousPrice": 3600.00,
+            "categories": "jacket",
+            "imageUrls": [
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506947/catalog/jacket/_ellesse_reidi_jacket_blue4_isy239.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506947/catalog/jacket/_ellesse_reidi_jacket_blue1_qmxnw4.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506947/catalog/jacket/_ellesse_reidi_jacket_blue2_khfiap.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618506947/catalog/jacket/_ellesse_reidi_jacket_blue5_hfz8m1.jpg"
+            ],
+            "quantity": 10,
+            "color": "blue",
+            "productUrl": "/jacket",
+            "brand": " ELLESSE ",
+            "parametrs": [
+                "XXS",
+                "XS"
+            ],
+            "description": [
+                "Утепленная куртка Illo. Независимо от погоды, вы будете готовы к выходу. Ткань: 100% микрополиэстер, принт ellesse на груди и тканый язычок на манжете, значок ellesse из ТПУ с силиконом и светоотражающим принтом на рукаве, тканая светоотражающая вставка на груди, застежка-молния по всей длине с логотипом Semi Palla, два скрытых боковых кармана"
+            ]
+        },
+        {
+            "name": "КУРТКА ELLESSE REIDI JACKET BLACK",
+            "currentPrice": 1800.00,
+            "previousPrice": 3000.00,
+            "categories": "jacket",
+            "imageUrls": [
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618507073/catalog/jacket/_ellesse_reidi_jacket_black5_fatoxg.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618507073/catalog/jacket/_ellesse_reidi_jacket_black2_b1o7xt.jpg",
+                "https://res.cloudinary.com/drquxwfcx/image/upload/v1618507073/catalog/jacket/_ellesse_reidi_jacket_black1_amehkq.jpg"
+            ],
+            "quantity": 10,
+            "color": "black",
+            "productUrl": "/jacket",
+            "brand": " ELLESSE ",
+            "parametrs": [
+                "XXS",
+                "XS",
+                "M"
+            ],
+            "description": [
+                "Утепленная куртка Illo. Независимо от погоды, вы будете готовы к выходу. Ткань: 100% микрополиэстер, принт ellesse на груди и тканый язычок на манжете, значок ellesse из ТПУ с силиконом и светоотражающим принтом на рукаве, тканая светоотражающая вставка на груди, застежка-молния по всей длине с логотипом Semi Palla, два скрытых боковых кармана"
+            ]
+        }
+    ]
+}

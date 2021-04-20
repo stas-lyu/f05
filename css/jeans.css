@@ -1,0 +1,26 @@
+.item_box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.jeans_img {
+    max-width: 100%;
+}
+
+.item_box_card {
+    border: 2px solid black;
+    margin: 10px;
+    width: 300px
+}
+
+.item_box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.old_price {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, .4);
+    padding-right: 20px;
+}
