@@ -1,6 +1,3 @@
-$(`document`).ready(function() {
-    $('.single-item').slick();
-});
 fetch('catalog.json')
     .then(response => response.json())
     .then(json => {
@@ -11,7 +8,7 @@ fetch('catalog.json')
             let slider = document.createElement('div')
             let descr = document.createElement('div');
             descr.classList.add('descr')
-            slider.classList.add('single-item', 'col', 's12' ,'m6')
+            slider.classList.add('single-item', 'col', 's12', 'm6')
             divCard.classList.add("item_box_card");
             itemBox.append(divCard);
             divCard.append(slider, descr)
@@ -26,10 +23,21 @@ fetch('catalog.json')
             `
             product.imageUrls.forEach((url) => {
                 let img = document.createElement('img');
-                img.classList.add('jeans_img')
                 img.src = url;
+                img.setAttribute('data-src', url);
+                img.classList.add('b-lazy')
                 slider.append(img);
             })
         });
 
+    })
+    .then(() => {
+        let slick = $('.single-item');
+
+        slick.slick({
+            lazyLoad: 'ondemand',
+            dots: true,
+        });
+
+        slick.on('afterChange', bLazy.revalidate);
     })
