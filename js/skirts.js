@@ -37,8 +37,7 @@ fetch('catalog.json')
             el.imageUrls.forEach((url) => {
                 let imgSkirts = document.createElement('img');
                 imgSkirts.src = url;
-                imgSkirts.setAttribute('data-src', url);
-                imgSkirts.classList.add('b-lazy')
+                imgSkirts.setAttribute('data-lazy', url);
                 slider.append(imgSkirts);
             })
             skirtsDetails.innerHTML = `
@@ -54,12 +53,9 @@ fetch('catalog.json')
     .then(() =>{
 
         let slick = $('.single-itemSkirts');
-
         slick.slick({
-            lazyLoad: 'ondemand',
+            lazyLoad: 'progressive',
             dots: true,
             arrows: false,
         });
-
-        slick.on('afterChange', bLazy.revalidate);
     })

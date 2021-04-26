@@ -2,7 +2,6 @@ fetch('catalog.json')
     .then(response => response.json())
     .then(json => {
         json.jeans.forEach((product) => {
-            console.log(product);
             let itemBox = document.querySelector('.item_box')
             let divCard = document.createElement('div')
             let slider = document.createElement('div')
@@ -37,8 +36,7 @@ fetch('catalog.json')
             product.imageUrls.forEach((url) => {
                 let img = document.createElement('img');
                 img.src = url;
-                img.setAttribute('data-src', url);
-                img.classList.add('b-lazy')
+                img.setAttribute('data-lazy', url);
                 slider.append(img);
             })
         });
@@ -51,11 +49,9 @@ fetch('catalog.json')
             dots: true,
             arrows: false,
             infinite: true,
+            lazyLoad: 'progressive',
             speed: 300,
             slidesToShow: 1,
             adaptiveHeight: true
         });
-
-        slick.on('afterChange', bLazy.revalidate);
-        $('.collapsible').collapsible();
     })
