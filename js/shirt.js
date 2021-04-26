@@ -29,11 +29,13 @@ fetch('catalog.json')
         slick.slick({
             dots: true,
             arrows: false,
-            lazyLoad: 'ondemand',
-
+            lazyLoad: 'progressive',
+            slidesToShow: 1,
+            // variableWidth: true,
+            // centerMode: true,
         });
 
-        slick.on('afterChange', bLazy.revalidate);
+        // slick.on('afterChange', bLazy.revalidate);
     })
 
 
@@ -42,8 +44,8 @@ let postImg = (array) => {
     let carusel = document.querySelectorAll('.carusel')
     array.forEach(src => {
         let img = document.createElement('img');
-        img.setAttribute('data-src', src);
-        img.classList.add('b-lazy')
+        img.setAttribute('data-lazy', src);
+        // img.classList.add('b-lazy')
         img.src = src
         carusel.forEach(el => {
             el.appendChild(img);
