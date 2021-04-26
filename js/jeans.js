@@ -14,13 +14,26 @@ fetch('catalog.json')
             divCard.append(slider, descr)
             descr.innerHTML = `
             <p>${product.name}</p> 
-            <p>Бренд: ${product.brand}</p>
-            <p>Цвет: ${product.color}</p>
-            <p>В наличии: ${product.quantity}</p>
-            <p><span class="old_price">Старая цена: ${product.previousPrice}</span><span class="new_price">Новая цена: ${product.currentPrice}</span></p>
-            <p>Параметры: ${product.parametrs[0]}</p>
-        <p>Описание: ${product.description[0]}</p>
+            <ul class="collapsible text-collaps">
+            <li>
+            <div class="collapsible-header flex-icon"><b>Подробнее:</b> <i class="far fa-arrow-alt-circle-down m-0"></i></div>
+            <div class="collapsible-body flex-body"><span><p class="brand_jeans_name"><b>Бренд:</b><span class='brand_jeans'>${product.brand}</span></span>
+               <p class='prise_jeans'> <b>Цвет:</b> <span style="color:${product.color}; font-weight:bold">${product.color}</span></p>
+               <p><b>В наличии:</b> ${product.quantity}</p></span></div>
+            </li>
+            <li>
+            <div class="collapsible-header flex-icon"><b>Цена:</b> <i class="far fa-arrow-alt-circle-down m-0"></i></div>
+            <div class="collapsible-body flex-body"><span><p><b style="text-decoration:line-through">Старая цена:</b> <span class="old_price_jeans">${product.previousPrice}</span><b>Новая цена:</b> <span class="new_price_jeans">${product.currentPrice}</span></p></span></div>
+            </li> 
+            <li>
+            <div class="collapsible-header flex-icon"><b>Описание:</b> <i class="far fa-arrow-alt-circle-down m-0"></i></div>
+            <div class="collapsible-body flex-body"><span><p><b>Параметры:</b> ${product.parametrs[0]}</p>
+                <p><b>Описание:</b> ${product.description[0]}</p></span></div>
+            </li>
+            </ul>
             `
+
+
             product.imageUrls.forEach((url) => {
                 let img = document.createElement('img');
                 img.src = url;
@@ -35,9 +48,14 @@ fetch('catalog.json')
         let slick = $('.single-item');
 
         slick.slick({
-            lazyLoad: 'ondemand',
             dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true
         });
 
         slick.on('afterChange', bLazy.revalidate);
+        $('.collapsible').collapsible();
     })
