@@ -1,0 +1,41 @@
+.hoodie_block {
+    display: flex;
+    flex-wrap: wrap;
+}
+.hoodie_prod {
+    width: 240px;
+    height: 390px;
+    padding: 10px;
+}
+.div-in-hoodie {
+    padding: 10px 0;
+}
+.slick-arrow-hoodie {
+    display: none !important;
+}
+.slick-slide-hoodie {
+    position: relative;
+    height: 250px;
+    border: none;
+}
+.slick-dots-hoodie {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+}
+.slick-dots-hoodie li button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50px;
+    background: gray;
+    margin: 0 5px;
+}
+.slick-dots-hoodie li button:hover {
+    opacity: 0.7;
+}
+.hoodie-display {
+    display: none;
+}
