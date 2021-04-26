@@ -622,5 +622,223 @@
                 "Утепленная куртка Illo. Независимо от погоды, вы будете готовы к выходу. Ткань: 100% микрополиэстер, принт ellesse на груди и тканый язычок на манжете, значок ellesse из ТПУ с силиконом и светоотражающим принтом на рукаве, тканая светоотражающая вставка на груди, застежка-молния по всей длине с логотипом Semi Palla, два скрытых боковых кармана"
             ]
         }
+    ],
+    "skirts": [
+        {
+            "name": "ЮБКА MAKIA BEAM SKIRT THYME",
+            "currentPrice": 1399.00,
+            "previousPrice": 2699.00,
+            "categories": "skirts",
+            "imageUrls": [
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618933197/skirts/1/_makia_beam_skirt_thyme2_isfoqp.jpg",
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618933197/skirts/1/_makia_beam_skirt_thyme1_y6kcff.jpg",
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1619433110/skirts/1/_makia_beam_skirt_thyme4_frsdqb.jpg"
+            ],
+            "quantity": 37,
+            "color": "gray",
+            "productUrl": "/skirts",
+            "brand": "MAKIA",
+            "parametrs": [
+                "S",
+                "M",
+                "L"
+            ],
+            "description": [
+                "Юбка со складками миди из переработанного полиэстерового крепа.",
+                "- Юбка со складками длины миди",
+                "- Резинка на талии",
+                "Состав: 100% полиэстер"
+            ]
+        },
+        {
+            "name": "ЮБКА MAKIA BEAM SKIRT THYME",
+            "currentPrice": 1299.00,
+            "previousPrice": 2499.00,
+            "categories": "skirts",
+            "imageUrls": [
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618933197/skirts/2/_makia_beam_skirt_black2_vad6gd.jpg",
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618933197/skirts/2/_makia_beam_skirt_black_gfzd0a.jpg",
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1619433258/skirts/2/_makia_beam_skirt_black4_spycc5.jpg"
+            ],
+            "quantity": 42,
+            "color": "black",
+            "productUrl": "/skirts",
+            "brand": "MAKIA",
+            "parametrs": [
+                "S",
+                "M",
+                "L"
+            ],
+            "description": [
+                "Юбка со складками миди из переработанного полиэстерового крепа.",
+                "- Юбка со складками длины миди",
+                "- Резинка на талии",
+                "Состав: 100% полиэстер"
+            ]
+        },
+        {
+            "name": "ЮБКА MAKIA BEAM SKIRT THYME",
+            "currentPrice": 1319.00,
+            "previousPrice": 2199.00,
+            "categories": "skirts",
+            "imageUrls": [
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618933197/skirts/3/w75012_3213_efv06n.jpg",
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618933197/skirts/3/w75012_3211_e0julj.jpg",
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1619433299/skirts/3/w75012_3212_kejytq.jpg"
+            ],
+            "quantity": 34,
+            "color": "pink",
+            "productUrl": "/skirts",
+            "brand": "MAKIA",
+            "parametrs": [
+                "S",
+                "M",
+                "L"
+            ],
+            "description": [
+                "Юбка классического кроя, изготовлена из полиэстера, с добавлением эластана.",
+                "Модель имеет традиционный силуэт средняю длину. В поясе расположена эластичная резинка.",
+                "Состав- 100% полиэстер."
+            ]
+        },
+        {
+            "name": "ЮБКА MAKIA BEAM SKIRT THYME",
+            "currentPrice": 1019.00,
+            "previousPrice": 2099.00,
+            "categories": "skirts",
+            "imageUrls": [
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618933197/skirts/4/w75012_7134_petuul.jpg",
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618933198/skirts/4/w75012_7131_geaj9m.jpg",
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1619433324/skirts/4/w75012_7133_bvh1kw.jpg"
+            ],
+            "quantity": 28,
+            "color": "green",
+            "productUrl": "/skirts",
+            "brand": "MAKIA",
+            "parametrs": [
+                "S",
+                "M",
+                "L"
+            ],
+            "description": [
+                "Юбка классического кроя, изготовлена из полиэстера, с добавлением эластана.",
+                "Модель имеет традиционный силуэт средняю длину. В поясе расположена эластичная резинка.",
+                "Состав- 100% полиэстер."
+            ]
+        },
+        {
+            "name": "ЮБКА ELLESSE ANNUZIATA SKIRT WHITE",
+            "currentPrice": 419.00,
+            "previousPrice": 699.00,
+            "categories": "skirts",
+            "imageUrls": [
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618933197/skirts/5/614331-ellesse-heritage-ss20q1-womens-sge08476-annuziata-skirt-white-ecomm-a_fcjvgw.jpg",
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618933197/skirts/5/614331-ellesse-heritage-ss20q1-womens-sge08476-annuziata-skirt-white-ecomm-c_k8iu61.jpg",
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1619433484/skirts/5/614331-ellesse-heritage-ss20q1-womens-sge08476-annuziata-skirt-white-ecomm-d_lqrr47.jpg"
+            ],
+            "quantity": 27,
+            "color": "white",
+            "productUrl": "/skirts",
+            "brand": "ELLESSE",
+            "parametrs": [
+                "S",
+                "M",
+                "L"
+            ],
+            "description": [
+                "Юбка Ellesse из мягкого, приятного на ощупь материала. Не боится влаги и легко стирается."
+            ]
+        },
+        {
+            "name": "ЮБКА ELLESSE CONTENDER SKORT WHITE",
+            "currentPrice": 839.00,
+            "previousPrice": 1399.00,
+            "categories": "skirts",
+            "imageUrls": [
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618933198/skirts/6/614440-ellesse-sport-ss20q1-womens-sce08892-contender-skort-white-ecomm-b_kjsmo7.jpg",
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618933198/skirts/6/614440-ellesse-sport-ss20q1-womens-sce08892-contender-skort-white-ecomm-a_qgfcrz.jpg",
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1619433513/skirts/6/614440-ellesse-sport-ss20q1-womens-sce08892-contender-skort-white-ecomm-d_igf4xs.jpg"
+            ],
+            "quantity": 46,
+            "color": "white",
+            "productUrl": "/skirts",
+            "brand": "ELLESSE",
+            "parametrs": [
+                "S",
+                "M",
+                "L"
+            ],
+            "description": [
+                "Шорты-юбка Ellesse из мягкого, приятного на ощупь материала. Не боится влаги и легко стирается."
+            ]
+        },
+        {
+            "name": "ПЛАТЬЕ THE NORTH FACE TEE DRESS TNF BLACK",
+            "currentPrice": 999.00,
+            "previousPrice": 1999.00,
+            "categories": "skirts",
+            "imageUrls": [
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618933198/skirts/7/_the_north_face_tee_dress_tnf_black7_dqly3g.jpg",
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618933198/skirts/7/_the_north_face_tee_dress_tnf_black1_q88s4w.jpg"
+            ],
+            "quantity": 13,
+            "color": "black",
+            "productUrl": "/skirts",
+            "brand": "NORTH",
+            "parametrs": [
+                "S",
+                "M",
+                "L"
+            ],
+            "description": [
+                "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+                "Lorem ipsum dolor sit amet, consectetur."
+            ]
+        },
+        {
+            "name": "ПЛАТЬЕ THE NORTH FACE TEE DRESS LIGHT PINK",
+            "currentPrice": 1299.00,
+            "previousPrice": 2499.00,
+            "categories": "skirts",
+            "imageUrls": [
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618933198/skirts/8/_the_north_face_tee_dress_light_pink5_bo2pwd.jpg",
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618933199/skirts/8/_the_north_face_tee_dress_light_pink6_m2n9ke.jpg"
+            ],
+            "quantity": 17,
+            "color": "pink",
+            "productUrl": "/skirts",
+            "brand": "NORTH",
+            "parametrs": [
+                "S",
+                "M",
+                "L"
+            ],
+            "description": [
+                "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+                "Lorem ipsum dolor sit amet, consectetur."
+            ]
+        },
+        {
+            "name": "ЖЕНСКИЙ КОМБИНЕЗОН ELLESSE LORON PLAYSUIT BLACK",
+            "currentPrice": 639.00,
+            "previousPrice": 1279.00,
+            "categories": "skirts",
+            "imageUrls": [
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618938656/skirts/9/ellesse_heritage_ss19q2_womens_sgb06848_loron_playsuit_black_ecomm_1_1024x1024_bbeztd.jpg",
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618938655/skirts/9/ellesse_heritage_ss19q2_womens_sgb06848_loron_playsuit_black_ecomm_2_1024x1024_fnrhvf.jpg"
+            ],
+            "quantity": 24,
+            "color": "black",
+            "productUrl": "/skirts",
+            "brand": "ELLESSE",
+            "parametrs": [
+                "S",
+                "M",
+                "L"
+            ],
+            "description": [
+                "Легкий комбинезон Ellesse, из материала на основе хлопка, свободного кроя."
+            ]
+        }
     ]
 }
