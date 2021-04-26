@@ -1,13 +1,10 @@
-
+let jacket = document.querySelector('.jacket')
 fetch('catalog.json')
     .then(response => response.json())
     .then(json => {
-
-        let row = document.querySelector('.jacket')
         json.jacket.forEach(item => {
-
             jacket.innerHTML += `
-            <div class="col s12 m6">
+            <div class="col s12 m4">
                  <div class="jacket_prod">
                     <div class="jacket_name">Бренд : ${item.name}</div>
                     <div class="carousel">
@@ -23,13 +20,13 @@ fetch('catalog.json')
                     </div>
                         </div>
         `
-            let jacketProd = document.querySelectorAll(".jacket_prod")
+            // let jacketProd = document.querySelectorAll(".jacket_prod")
 
-            jacketProd.forEach((item) => {
-                item.addEventListener("click", (item) => {
-
-                })
-            })
+            // jacketProd.forEach((item) => {
+            //     item.addEventListener("click", (item) => {
+            //
+            //     })
+            // })
 
             postImg(item.imageUrls)
         });
@@ -38,13 +35,9 @@ fetch('catalog.json')
     let slick = $('.carousel');
 
     slick.slick({
+        lazyLoad: 'progressive',
         dots: true,
-        // infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        centerMode: true,
-        variableWidth: true
-
+        arrows: false,
     });
 })
 

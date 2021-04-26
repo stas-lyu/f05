@@ -57,7 +57,6 @@ fetch('catalog.json')
             dots: true,
             arrows: false,
         });
-        slick.slick("slickSetOption", "draggable", true, true);
     })
 
 });
