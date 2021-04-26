@@ -263,7 +263,9 @@
             "previousPrice": 5998.00,
             "categories": "hoodie",
             "imageUrls":[
-                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/m/_makia_brand_hooded_sweatshirt_black1.jpg"
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/m/_makia_brand_hooded_sweatshirt_black1.jpg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/d/_diamond_supply_co._logo_hoodie_black01.jpg",
+                "https://shift.ua/pub/media/catalog/product/cache/22fdc32305c5f056fce3422d06019cde/_/d/_diamond_supply_co._logo_hoodie_black3.jpg"
             ],
             "quantity": 4,
             "color": "black",
