@@ -1,12 +1,12 @@
-#renderSkirts {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  height: 100vh;
-}
-.single-itemSkirts {
-  width: 300px;
-  height: 300px;
-}
+/*#renderSkirts {*/
+/*  display: grid;*/
+/*  grid-template-columns: repeat(4, 1fr);*/
+/*  height: 100vh;*/
+/*}*/
+/*.single-itemSkirts {*/
+/*  width: 300px;*/
+/*  height: 300px;*/
+/*}*/
 .descriptionSkirts {
   display: none;
 }

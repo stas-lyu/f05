@@ -4,41 +4,34 @@ $(document).ready(function() {
         .then(json => {
             let row = document.querySelector('.shirt-box')
             json.shirt.forEach(element => {
-
                 row.innerHTML += `
-            <div class=" col s12 m4 ">
-            <div class="shirt_product">
-  
-            <p class="shirt_brand">Бренд : ${element.brand}</p>
-        <p class="shirt_name">Названые: ${element.name}</p>
-        <div class="price"> Цена :
-            <div class="oldPrice">${element.previousPrice} ₴</div>
-            <div class="newPrice">${element.currentPrice} ₴</div>
-        </div>
-                              <div class="carousel">
+                <div class=" col s12 m4 ">
+                <div class="shirt_product">
+                <p class="shirt_brand">Бренд : ${element.brand}</p>
+                <div class="carusel-shirt">
+                </div>
+            <p class="shirt_name">Названые: ${element.name}</p>
+            <div class="price"> Цена :
+                <div class="oldPrice">${element.previousPrice} ₴</div>
+                <div class="newPrice">${element.currentPrice} ₴</div>
             </div>
-        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-        </div>
-        </div>
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+            </div>
+            </div>
         `
                 postImg(element.imageUrls)
             });
         }).then(() => {
-        let slick = $('.carousel');
-
+        let slick = $('.carusel-shirt');
         slick.slick({
             dots: true,
             arrows: false,
             lazyLoad: 'progressive',
             slidesToShow: 1,
         });
-
     })
-
-
-
     let postImg = (array) => {
-        let carousel = document.querySelectorAll('.carousel')
+        let carousel = document.querySelectorAll('.carusel-shirt')
         array.forEach(src => {
             let img = document.createElement('img');
             img.setAttribute('data-lazy', src);
@@ -48,5 +41,6 @@ $(document).ready(function() {
             })
         })
     }
+
 });
 

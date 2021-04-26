@@ -20,13 +20,14 @@ fetch('catalog.json')
                     </div>
                         </div>
         `
-            // let jacketProd = document.querySelectorAll(".jacket_prod")
+            let jacketProd = document.querySelectorAll(".jacket_prod")
 
-            // jacketProd.forEach((item) => {
-            //     item.addEventListener("click", (item) => {
-            //
-            //     })
-            // })
+            jacketProd.forEach((item) => {
+                item.addEventListener("click", (item) => {
+                    let price = item.querySelector('.newprice');
+                    console.log(price);
+                })
+            })
 
             postImg(item.imageUrls)
         });
