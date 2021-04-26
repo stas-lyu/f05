@@ -1,27 +1,51 @@
 .shirt_product {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid black;
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #c0c0c0;
+    height: 450px;
+    overflow: hidden;
+    padding: 25px 15px;
+    position: relative;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+    margin-bottom: 20px;
+}
 
-  .shirt_name {
-    margin: 0 100px;
-  }
+.shirt_product:hover {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
 
-  .price {
+.shirt_name {
+    margin: 0px 10px 15px 10px;
+    font-weight: 500;
+}
+
+.price {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    width: 100%;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
 
-    .newPrice {
-      font-weight: bolder;
-    }
+.newPrice {
+    font-weight: bolder;
+}
 
-    .oldPrice {
-      text-decoration: line-through;
-      opacity: 0.6;
-    }
-  }
+.oldPrice {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.carusel {
+    max-width: 100%;
+    max-height: 250px;
+    margin: 0 50px;
+}
+
+.carusel img {
+    height: 200px;
+    outline: none;
 }
