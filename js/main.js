@@ -1,5 +1,6 @@
-$(document).ready(function(){
+$(document).ready(function() {
     $('.tabs').tabs();
+
 });
 
 let bLazy = new Blazy({

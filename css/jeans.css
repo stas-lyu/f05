@@ -9,9 +9,8 @@
 }
 
 .item_box_card {
-    border: 2px solid black;
     margin: 10px;
-    width: 300px
+    width: 300px;
 }
 
 .item_box {
@@ -19,8 +18,74 @@
     flex-wrap: wrap;
 }
 
-.old_price {
+.old_price_jeans {
     text-decoration: line-through;
     color: rgba(0, 0, 0, .4);
     padding-right: 20px;
+    font-size: 25px;
+    color: red;
+}
+
+.prise_jeans,
+.brand_jeans_name {
+    display: flex;
+}
+
+.brand_jeans {
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.prise_jeans b {
+    padding-right: 10px;
+}
+
+.new_price_jeans {
+    font-size: 25px;
+    font-weight: 600;
+    color: green;
+}
+
+.flex-icon {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: grey;
+    position: relative;
+}
+
+.flex-body {
+    position: absolute;
+    z-index: 200;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .2);
+    width: 298px;
+}
+
+.m-0 {
+    margin-right: 0 !important;
+}
+
+.flex-body span {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-body>span>p {
+    margin: 0 5px !important;
+    font-size: 16px !important;
+    color: grey;
+}
+
+
+/* .b-lazy {
+    width: 100px !important;
+    height: 100px !important;
+} */
+
+@media only screen and (min-width: 601px) {
+    .row .col.m6 {
+        width: 100%;
+    }
 }
