@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="materialize/css/materialize.min.css">
     <link rel="stylesheet" href="css/jeans.css">
     <link rel="stylesheet" href="css/shirt.css">
+
+    <link rel="stylesheet" href="css/skirts.css">
+
     <link rel="stylesheet" href="css/hoodie.css">
+
     <script src="slick/slick.min.js"></script>
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
@@ -16,15 +20,19 @@
     <script src="materialize/js/materialize.min.js"></script>
 </head>
 
+
+
 <body>
+
 
     <div class="row">
         <div class="col s12">
             <ul class="tabs">
-                <li class="tab col s3"><a class="active" href="#test1">Jacket</a></li>
-                <li class="tab col s3"><a href="#test2">Shirt</a></li>
-                <li class="tab col s3"><a href="#test3">Jeans</a></li>
-                <li class="tab col s3"><a href="#test4">Hoodie</a></li>
+                <li class="tab col s2"><a class="active" href="#test1">Jacket</a></li>
+                <li class="tab col s2"><a href="#test2">Shirt</a></li>
+                <li class="tab col s2"><a href="#test3">Jeans</a></li>
+                <li class="tab col s2"><a href="#test4">Hoodie</a></li>
+                          <li class="tab col s2"><a href="#test5">Skirts</a></li>
             </ul>
         </div>
         <div class="container">
@@ -73,13 +81,28 @@
                 </div>
             </section>
         </div>
+
+        <div id="test4" class="col s12">Test 4</div>
+      
+        <div id="test5" class="col s12">
+            <section id="skirts">
+                <div class="row skirts">
+                    <div id="renderSkirts"></div>
+                </div>
+            </section>
+        </div>
+
     </div>
+
+
 
     <script src="js/main.js"></script>
     <script src="js/hoodie.js"></script>
     <script src="js/jacket.js"></script>
     <script src="js/jeans.js"></script>
     <script src="js/shirt.js"></script>
+  <script src="js/skirts.js"></script>
+
 </body>
 
 </html>
