@@ -1,4 +1,6 @@
-fetch('catalog.json')
+$(document).ready(function() {
+
+    fetch('catalog.json')
     .then(response => response.json())
     .then(json => {
         json.jeans.forEach((product) => {
@@ -35,7 +37,7 @@ fetch('catalog.json')
 
             product.imageUrls.forEach((url) => {
                 let img = document.createElement('img');
-                img.src = url;
+                img.src = 'assets/img/placeholder.jpg';
                 img.setAttribute('data-lazy', url);
                 slider.append(img);
             })
@@ -52,6 +54,7 @@ fetch('catalog.json')
             lazyLoad: 'progressive',
             speed: 300,
             slidesToShow: 1,
-            adaptiveHeight: true
         });
     })
+
+});

@@ -1,5 +1,6 @@
+$(document).ready(function() {
 
-let renderSkirts = document.querySelector('#renderSkirts');
+    let renderSkirts = document.querySelector('#renderSkirts');
 
 fetch('catalog.json')
     .then(response => response.json())
@@ -36,7 +37,7 @@ fetch('catalog.json')
         `
             el.imageUrls.forEach((url) => {
                 let imgSkirts = document.createElement('img');
-                imgSkirts.src = url;
+                imgSkirts.src = 'assets/img/placeholder.jpg';
                 imgSkirts.setAttribute('data-lazy', url);
                 slider.append(imgSkirts);
             })
@@ -47,15 +48,16 @@ fetch('catalog.json')
                   <p class="skirt-prevPrice" style="opacity: 0.7;text-decoration: line-through; margin-left: 20px">  ${el.previousPrice} ₴</p>  
              </div>
             `
-
         });
     })
     .then(() =>{
-
         let slick = $('.single-itemSkirts');
         slick.slick({
             lazyLoad: 'progressive',
             dots: true,
             arrows: false,
         });
+        slick.slick("slickSetOption", "draggable", true, true);
     })
+
+});

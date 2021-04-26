@@ -1,41 +1,65 @@
-fetch("catalog.json")
-    .then(response =>
-        response.json()
-    )
+
+fetch('catalog.json')
+    .then(response => response.json())
     .then(json => {
-        console.log(json)
-        let render = document.querySelector("#render")
+
+        let row = document.querySelector('.jacket')
         json.jacket.forEach(item => {
-            let img = "";
-            let text = "";
-            let size = "";
 
-            item.imageUrls.forEach((prod) => {
-                img += `<img src="${prod}"/>`
-            });
-            item.description.forEach((info)=>{
-                text += `<div class="">${info}</div>`
-            })
-            item.parametrs.forEach((argument)=>{
-                size += `<div class="">${argument}</div>`
-            })
-
-            render.innerHTML += `
-                <div class="jacket_prod">
-                    <div class="jacket_name">${item.name}</div>
-                    <div class="jacket_price">
-                    <div class="oldPrice">${item.currentPrice}</div>
-                    <div class="new_price">${item.previousPrice}</div>
+            jacket.innerHTML += `
+            <div class="col s12 m6">
+                 <div class="jacket_prod">
+                    <div class="jacket_name">Бренд : ${item.name}</div>
+                    <div class="carousel">
                     </div>
-                    <div class="jacket_categories">${item.categories}</div>
-                    <div class="jacket_carusel">
-                    ${img}</div>
-                    <div class="jacket_quantity">${item.quantity}</div>
-                    <div class="jacket_color">${item.color}</div>
-                    <div class="jacket_productUrl">${item.productUrl}</div>
-                    <div class="jacket_brand">${item.brand}</div>
-                    <div class="jacket_parametrs">${size}</div>
-                    <div class="jacket_description">${text}</div>
+                    <div class="jacket_price">Цена :
+                    <div class="oldPrice">${item.previousPrice}</div>
+                    <div class="newprice">${item.currentPrice}</div>
+                    </div>
+                    <div class="jacket_categories">Категория:${item.categories}</div>
+                    <div class="jacket_quantity">Количество:${item.quantity}</div>
+                    <div class="jacket_color">Цвета в наличии: ${item.color}</div>
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Перейти к покупке</a>
+                    </div>
+                        </div>
         `
+            let jacketProd = document.querySelectorAll(".jacket_prod")
+
+            jacketProd.forEach((item) => {
+                item.addEventListener("click", (item) => {
+
+                })
+            })
+
+            postImg(item.imageUrls)
         });
+        // <div class="jacket_description">Описание: ${item.description}</div>
+    }).then(() => {
+    let slick = $('.carousel');
+
+    slick.slick({
+        dots: true,
+        // infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+
     });
+})
+
+
+
+let postImg = (array) => {
+    let carousel = document.querySelectorAll('.carousel')
+    array.forEach(src => {
+        let img = document.createElement('img');
+        img.setAttribute('data-lazy', src);
+        img.src = 'assets/img/placeholder.jpg';
+        carousel.forEach(el => {
+            el.appendChild(img);
+        })
+    })
+}
+
+
