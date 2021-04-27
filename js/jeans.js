@@ -20,7 +20,7 @@ $(document).ready(function () {
             <p class="product_name">${product.name}</p> 
             <span class="new_price_jeans">${product.currentPrice}$</span>
             <span class="old_price_jeans">${product.previousPrice}$</span>
-                        <div class="like"><i class="fas fa-heart"></i></div>
+                        <i class="fas addCart fa-cart-plus"></i>
             <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Купить</a></p>
             `
                 product.imageUrls.forEach((url) => {
@@ -31,17 +31,17 @@ $(document).ready(function () {
                     slider.append(img);
                 })
 
-                let like = document.querySelector(`#${product.id} .like`);
+                let addCart = document.querySelector(`#${product.id} .addCart`);
 
-                like.addEventListener('click', (e) => {
-                    if (like.style.color == "red") {
-                        like.style.color = "black"
+                addCart.addEventListener('click', (e) => {
+                    if (addCart.style.color == "red") {
+                        addCart.style.color = "black"
                         cart.forEach((value, key) => {
                             if (value.id === `${product.id}`)
                                 delete cart[key]
                         })
                     } else {
-                        like.style.color = "red"
+                        addCart.style.color = "red"
                         cart.push(product);
                     }
                 })
