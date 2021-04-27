@@ -1,27 +1,41 @@
-/*#renderSkirts {*/
-/*  display: grid;*/
-/*  grid-template-columns: repeat(4, 1fr);*/
-/*  height: 100vh;*/
-/*}*/
-/*.single-itemSkirts {*/
-/*  width: 300px;*/
-/*  height: 300px;*/
-/*}*/
-.descriptionSkirts {
-  display: none;
-}
 .priceSkirts {
   display: flex;
   font-size: 18px;
-  margin-top: -25px;
+  align-items: center;
 }
-
-.skirtInfo {
+.skirt-brand,
+.skirt-color,
+.skirt-param,
+.skirt-quantity,
+.skirt-description {
+  display: none;
+}
+.modalSkirt {
+  display: flex;
+}
+.modalImgSkirt {
   width: 300px;
   height: auto;
-  margin: 10px;
 }
-.skirtsDetails {
-  width: 100%;
-  margin-top: 81px;
+.btnOrder {
+  margin-top: 10px;
+  font-size: 18px;
+  width: 100px;
+  height: 40px;
+  border-radius: 2px;
+  color: white;
+  border-color: black;
+  background: black;
+}
+.sizeSkirt {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+.sizes {
+  width: 32px;
+  height: 32px;
+  border: 1px solid black;
+  background: #efefef;
+  text-align: center;
 }

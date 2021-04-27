@@ -1,16 +1,16 @@
 {
     "jeans": [{
-            "name": "ДЖИНСЫ LEVI'S SKATEBOARDING SKATE 501 SE STF HOMEWOOD",
-            "currentPrice": 3590.00,
-            "previousPrice": 7180.00,
-            "categories": "jeans",
-            "imageUrls": ["https://res.cloudinary.com/drquxwfcx/image/upload/v1618504873/catalog/jeans/1/_levi_s_skateboarding_skate_501_se_stf_homewood1_zssnk9.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504871/catalog/jeans/1/_levi_s_skateboarding_skate_501_se_stf_homewood2_pwrip8.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504872/catalog/jeans/1/_levi_s_skateboarding_skate_501_se_stf_homewood6_u8yivc.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504871/catalog/jeans/1/_levi_s_skateboarding_skate_501_se_stf_homewood4_ddmkoy.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504871/catalog/jeans/1/_levi_s_skateboarding_skate_501_se_stf_homewood3_s832mf.jpg"],
-            "quantity": 5,
-            "color": "blue",
-            "brand": "Levi's Skateboarding",
-            "parametrs": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa neque autem itaque voluptas, aperiam ducimus ipsum architecto, maxime dignissimos quo nisi ipsa fuga unde modi recusandae corrupti? Iste, voluptatibus reprehenderit!"],
-            "description": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa neque autem itaque voluptas, aperiam ducimus ipsum architecto, maxime dignissimos quo nisi ipsa fuga unde modi recusandae corrupti? Iste, voluptatibus reprehenderit!"]
-        },
+        "name": "ДЖИНСЫ LEVI'S SKATEBOARDING SKATE 501 SE STF HOMEWOOD",
+        "currentPrice": 3590.00,
+        "previousPrice": 7180.00,
+        "categories": "jeans",
+        "imageUrls": ["https://res.cloudinary.com/drquxwfcx/image/upload/v1618504872/catalog/jeans/1/_levi_s_skateboarding_skate_501_se_stf_homewood6_u8yivc.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504873/catalog/jeans/1/_levi_s_skateboarding_skate_501_se_stf_homewood1_zssnk9.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504871/catalog/jeans/1/_levi_s_skateboarding_skate_501_se_stf_homewood2_pwrip8.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504871/catalog/jeans/1/_levi_s_skateboarding_skate_501_se_stf_homewood4_ddmkoy.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504871/catalog/jeans/1/_levi_s_skateboarding_skate_501_se_stf_homewood3_s832mf.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504872/catalog/jeans/1/_levi_s_skateboarding_skate_501_se_stf_homewood6_u8yivc.jpg"],
+        "quantity": 5,
+        "color": "blue",
+        "brand": "Levi's Skateboarding",
+        "parametrs": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa neque autem itaque voluptas, aperiam ducimus ipsum architecto, maxime dignissimos quo nisi ipsa fuga unde modi recusandae corrupti? Iste, voluptatibus reprehenderit!"],
+        "description": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa neque autem itaque voluptas, aperiam ducimus ipsum architecto, maxime dignissimos quo nisi ipsa fuga unde modi recusandae corrupti? Iste, voluptatibus reprehenderit!"]
+    },
         {
             "name": "ДЖИНСЫ LEVI'S SKATEBOARDING SKATE BAGGY 5 POCKET SE BIG BEAR",
             "currentPrice": 3590.00,
@@ -826,8 +826,8 @@
             "previousPrice": 1279.00,
             "categories": "skirts",
             "imageUrls": [
-                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618938656/skirts/9/ellesse_heritage_ss19q2_womens_sgb06848_loron_playsuit_black_ecomm_1_1024x1024_bbeztd.jpg",
-                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1618938655/skirts/9/ellesse_heritage_ss19q2_womens_sgb06848_loron_playsuit_black_ecomm_2_1024x1024_fnrhvf.jpg"
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1619516673/skirts/9/_the_north_face_tee_dress_light_pink5_bo2pwd_aqhwlf.jpg",
+                "https://res.cloudinary.com/du8qqcpsh/image/upload/v1619516673/skirts/9/_the_north_face_tee_dress_light_pink5_bo2pwd%D0%B0_hn2jl8.jpg"
             ],
             "quantity": 24,
             "color": "black",

@@ -10,7 +10,7 @@
 
 .item_box_card {
     margin: 10px;
-    width: 245px;
+    width: 230px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

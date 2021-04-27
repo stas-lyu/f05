@@ -37,7 +37,7 @@ fetch('catalog.json')
                 let categories = item.querySelector(".jacket_categories").innerHTML;
                 let quantity = item.querySelector(".jacket_quantity").innerText;
                 let color = item.querySelector(".jacket_color").innerText;
-                modalContent.innerHTML += `
+                modalContent.innerHTML = `
                 <div class="jacket_name">Бренд : ${jacket_name}</div>
                 <img src="${carousel}" alt="">
             <div>
