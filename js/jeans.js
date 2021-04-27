@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     let cart = [];
 
@@ -33,12 +33,19 @@ $(document).ready(function() {
 
                 let like = document.querySelector(`#${product.id} .like`);
 
-                like.addEventListener('click',()=> {
-                            if (like.style.color == "black") {
-                                like.style.color = "red"
-                                cart.push(product);
-                                console.log(cart)
-                            } else { like.style.color = "black" }
+                like.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (like.style.color == "black") {
+                        like.style.color = "red"
+                        cart.push(product);
+                    } else {
+                        like.style.color = "black"
+                        cart.forEach((value, key) => {
+                            if (value.id === `${product.id}`)
+                                delete cart[key]
+                        })
+
+                    }
                 })
             });
 
@@ -52,7 +59,8 @@ $(document).ready(function() {
             // console.log(priceNew);
 
             itemCard.forEach(item => {
-                item.addEventListener('click', () => {
+                item.addEventListener('click', (e) => {
+                    e.stopPropagation();
                     let priceNew = item.querySelector('.new_price_jeans');
                     let priceOld = item.querySelector('.old_price_jeans')
                     let productName = item.querySelector('.product_name');
