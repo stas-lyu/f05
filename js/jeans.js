@@ -1,4 +1,5 @@
-$(document).ready(function () {
+$(document).ready(function() {
+
     fetch('catalog.json')
         .then(response => response.json())
         .then(json => {
@@ -8,31 +9,15 @@ $(document).ready(function () {
                 let slider = document.createElement('div')
                 let descr = document.createElement('div');
                 descr.classList.add('descr')
-                slider.classList.add('single-item', 'col', 's12', 'm4')
-                divCard.classList.add("item_box_card");
+                slider.classList.add('single-item', 's12', 'm4')
+                divCard.classList.add("item_box_card", 's12', 'm4');
                 itemBox.append(divCard);
-                divCard.append(slider, descr)
+                divCard.append(slider, descr);
                 descr.innerHTML = `
             <p class="product_name">${product.name}</p> 
-            <ul class="collapsible text-collaps">
-            <li>
-            <div class="collapsible-header flex-icon"><b>Подробнее:</b> <i class="far fa-arrow-alt-circle-down m-0"></i></div>
-            <div class="collapsible-body flex-body"><span><p class="brand_jeans_name"><b>Бренд:</b><span class='brand_jeans'>${product.brand}</span></span>
-            <p class='prise_jeans'> <b>Цвет:</b> <span style="color:${product.color}; font-weight:bold">${product.color}</span></p>
-            <p><b>В наличии:</b> ${product.quantity}</p></span></div>
-            </li>
-            <li>
-            <div class="collapsible-header flex-icon"><b>Цена:</b> <i class="far fa-arrow-alt-circle-down m-0"></i></div>
-            <div class="collapsible-body flex-body"><span><p><b style="text-decoration:line-through">Старая цена:</b> <span class="old_price_jeans">${product.previousPrice}</span><b>Новая цена:</b> <span class="new_price_jeans">${product.currentPrice}</span></p></span>
-            
-            </li> 
-            <li>
-            <div class="collapsible-header flex-icon"><b>Описание:</b> <i class="far fa-arrow-alt-circle-down m-0"></i></div>
-            <div class="collapsible-body flex-body"><span><p><b>Параметры:</b> ${product.parametrs[0]}</p>
-                <p><b>Описание:</b> ${product.description[0]}</p></span></div>
-            </li>
-            </ul>
-            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a></div>
+            <span class="new_price_jeans">${product.currentPrice}$</span>
+            <span class="old_price_jeans">${product.previousPrice}$</span>
+            <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Купить</a></p>
             `
 
                 product.imageUrls.forEach((url) => {
@@ -42,30 +27,51 @@ $(document).ready(function () {
                     img.setAttribute('data-lazy', url);
                     slider.append(img);
                 })
-                let image = document.querySelector('.gallery');
-                console.log(image);
+
+
+
             });
 
         })
         .then(() => {
             // modal
             const modal = document.querySelector('.modal-content');
+            let modal_new = document.querySelector('#modal1');
+            let md_new = modal_new.classList.add('modal_new');
             let itemCard = document.querySelectorAll('.item_box_card');
             // console.log(priceNew);
 
             itemCard.forEach(item => {
                 item.addEventListener('click', () => {
-                    let priceNew = document.querySelector('.new_price_jeans');
-                    let productName = document.querySelector('.product_name');
-                    console.log(priceNew);
-                    console.log(productName);
+                    let priceNew = item.querySelector('.new_price_jeans');
+                    let priceOld = item.querySelector('.old_price_jeans')
+                    let productName = item.querySelector('.product_name');
+                    let image = item.querySelector('.gallery')
                     modal.innerHTML = `
-            <div class='modal_content'>  
-            <p>${priceNew.innerText}</p>
-            <div>
-            
-</div>
-            </div>
+                    <h4>${productName.innerText}</h4>
+                    <div class='modal_content'> 
+                        <img class="modalImg"src='${image.src}'> 
+                        <div class="modal_desc">
+                        <div class="modal_prices">
+                        <span class='old_price_modal'>${priceOld.innerText}</span>
+                        <span class='new_price_modal'>${priceNew.innerText}</span>
+                        </div>
+                        <div class='count'><button>-</button> 0 <button>+</button></div>
+                        <div class='inputs'>
+                        <h5>Оформить заказ:</h5>
+                        <label for="name_jeans">
+                            <input placeholder="Введите ваше имя" type="text"id="name_jeans">
+                        </label>
+                        <label for="phone_jeans">
+                            <input placeholder="Ваш номер телефона" type="text"id="phone_jeans">
+                        </label>
+                        <label for="button_send">
+                            <input value='Оправить' type="button"id="button_send">
+                        </label>
+                        </div>
+                        </div>
+                        
+                    </div>
             `
                 })
 
