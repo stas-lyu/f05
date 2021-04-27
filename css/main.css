@@ -1,3 +1,9 @@
 .like {
     color: black;
 }
+
+.cart_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
