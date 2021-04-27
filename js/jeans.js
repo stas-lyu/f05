@@ -35,8 +35,9 @@ $(document).ready(function() {
 
                 like.addEventListener('click',()=> {
                             if (like.style.color == "black") {
-                                console.log(product)
                                 like.style.color = "red"
+                                cart.push(product);
+                                console.log(cart)
                             } else { like.style.color = "black" }
                 })
             });

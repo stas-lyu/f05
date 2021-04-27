@@ -1,5 +1,5 @@
 const hoodieBlock = document.querySelector('.hoodie_block');
-
+const modalHoodie = document.querySelector('.modal-content');
 
 fetch(`catalog.json`)
     .then(response => response.json())
@@ -10,13 +10,14 @@ fetch(`catalog.json`)
                 img += `<img class="image-hoodie" src="${prod}"/>`
             });
             hoodieBlock.innerHTML += `
-                <div class="hoodie_prod">
+                <div class="hoodie_prod" id="${element.id}">
                     <div class="single-items productImg-hoodie">${img}</div>
                     <div class="hoodie_name div-in-hoodie">${element.name}</div>
                     <div class="priceHoodie" style="display: flex; font-size: 18px;">
                     <div class="currentPrice-hoodie div-in-hoodie">Цена: ${element.currentPrice}₴</div>
                     <div class="newPrice-hoodie div-in-hoodie" style="text-decoration: line-through; margin-left:20px; color: #a1a0a0;">${element.previousPrice}₴</div>
                     </div>
+                    <div class="like"><i class="fas fa-heart"></i></div>
                     <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
                     <div class="hoodie-display">
                     <div class="color-hoodie div-in-hoodie">${element.color}</div>
@@ -26,12 +27,18 @@ fetch(`catalog.json`)
                     </div>
                     </div>
         `
+            let like = document.querySelector(`#${element.id} .like`);
+
+            like.addEventListener('click',()=> {
+                if (like.style.color == "black") {
+                    like.style.color = "red"
+                    console.log('test!')
+                } else { like.style.color = "black" }
+            })
         });
     })
     .then(()=> {
-        const modalHoodie = document.querySelector('.modal-content');
         let hoodieProd = document.querySelectorAll('.hoodie_prod');
-        // console.log(priceNew);
         hoodieProd.forEach(item => {
             item.addEventListener('click', () => {
                 let productNameHoodie = item.querySelector('.hoodie_name');
@@ -41,7 +48,6 @@ fetch(`catalog.json`)
                 let productParametrsHoodie = item.querySelector('.parametrs-hoodie');
                 let productDescriptionHoodie = item.querySelector('.description-hoodie');
                 let productImgHoodie = item.querySelector('.image-hoodie');
-                console.log(productImgHoodie.src)
                 modalHoodie.innerHTML = `
                 <img src="${productImgHoodie.src}" alt="" style="width: 400px;">
                 <p><span>Название:</span>${productNameHoodie.innerText}</p>
