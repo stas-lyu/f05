@@ -20,7 +20,6 @@ $(document).ready(function() {
                         <div class="like"><i class="fas fa-heart"></i></div>
             <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Купить</a></p>
             `
-
                 product.imageUrls.forEach((url) => {
                     let img = document.createElement('img');
                     img.src = 'assets/img/placeholder.jpg';
@@ -28,10 +27,17 @@ $(document).ready(function() {
                     img.setAttribute('data-lazy', url);
                     slider.append(img);
                 })
-
-
-
             });
+
+            let likes = this.querySelectorAll('.like');
+
+            likes.forEach((like)=> {
+                like.addEventListener('click', ()=> {
+                    if (like.style.color == "black") {
+                        like.style.color = "red"
+                    } else { like.style.color = "black" }
+                })
+            })
 
         })
         .then(() => {
