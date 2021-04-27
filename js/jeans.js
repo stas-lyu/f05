@@ -34,17 +34,15 @@ $(document).ready(function () {
                 let like = document.querySelector(`#${product.id} .like`);
 
                 like.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    if (like.style.color == "black") {
-                        like.style.color = "red"
-                        cart.push(product);
-                    } else {
+                    if (like.style.color == "red") {
                         like.style.color = "black"
                         cart.forEach((value, key) => {
                             if (value.id === `${product.id}`)
                                 delete cart[key]
                         })
-
+                    } else {
+                        like.style.color = "red"
+                        cart.push(product);
                     }
                 })
             });
