@@ -1,5 +1,6 @@
 {
     "jeans": [{
+        "id": "jeans_101",
         "name": "ДЖИНСЫ LEVI'S SKATEBOARDING SKATE 501 SE STF HOMEWOOD",
         "currentPrice": 3590.00,
         "previousPrice": 7180.00,
@@ -12,6 +13,7 @@
         "description": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa neque autem itaque voluptas, aperiam ducimus ipsum architecto, maxime dignissimos quo nisi ipsa fuga unde modi recusandae corrupti? Iste, voluptatibus reprehenderit!"]
     },
         {
+            "id": "jeans_102",
             "name": "ДЖИНСЫ LEVI'S SKATEBOARDING SKATE BAGGY 5 POCKET SE BIG BEAR",
             "currentPrice": 3590.00,
             "previousPrice": 7180.00,
@@ -19,12 +21,12 @@
             "imageUrls": ["https://res.cloudinary.com/drquxwfcx/image/upload/v1618504872/catalog/jeans/2/_levi_s_skateboarding_skate_baggy_5_pocket_se_big_bear1_hlihqv.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504872/catalog/jeans/2/_levi_s_skateboarding_skate_baggy_5_pocket_se_big_bear2_q0bpj6.jpg", "https://res.cloudinary.com/drquxwfcx/image/upload/v1618504872/catalog/jeans/2/_levi_s_skateboarding_skate_baggy_5_pocket_se_big_bear6_qacipi.jpg"],
             "quantity": 7,
             "color": "blue",
-
             "brand": "Levi's Skateboarding",
             "parametrs": ["Материал: 83% хлопок, 15% полиамид, 2% эластан Страна-производитель: Бангладеш"],
             "description": ["Levi's - легендарный бренд, который подарил миру первые джинсы и стал настоящей иконой американской культуры. Начиная с 1853 года и на каждом витке своей истории - инновации и качество оставались и продолжаются оставаться в основе идеологии бренда."]
         },
         {
+            "id": "jeans_103",
             "name": "ДЖИНСЫ LEVI'S SKATEBOARDING SKATE BAGGY 5 POCKET SE BAKER",
             "currentPrice": 3590.00,
             "previousPrice": 7180.00,
@@ -38,6 +40,7 @@
             "description": ["Коллекция Levi's Skateboarding сочетает в себе классический стиль с превосходной конструкцией, комфортом и долговечностью для нужд современного скейтборд-сообщества. Эти джинсы с современным мешковатым силуэтом и отсылкой к винтажному стилю отличаются повышенным комфортом и долговечностью."]
         },
         {
+            "id": "jeans_104",
             "name": "ДЖИНСЫ LEVI'S SKATEBOARDING SKATE 501 SE STF INDIGO WARP",
             "currentPrice": 1999.00,
             "previousPrice": 4200.00,
@@ -50,6 +53,7 @@
             "description": ["Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa neque autem itaque voluptas, aperiam ducimus ipsum architecto, maxime dignissimos quo nisi ipsa fuga unde modi recusandae corrupti? Iste, voluptatibus reprehenderit!"]
         },
         {
+            "id": "jeans_105",
             "name": "ДЖИНСЫ LEVI'S SKATEBOARDING SKATE 511 SLIM 5 POCKET SE CAVIAR",
             "currentPrice": 3199.00,
             "previousPrice": 6389.00,
@@ -61,6 +65,7 @@
             "parametrs": ["Мужские джинсы Levi's 511 изготовлены из хлопка с добавлением эластана (98% хлопок, 2% эластан). "],
             "description": ["В местах наибольшего износа швы укреплены, задние карманы из двойной ткани. Модель прямого кроя, специально созданная для скейтбординга и активных занятий спортом."]
         }, {
+            "id": "jeans_106",
             "name": "ДЖИНСЫ LEVI'S SKATEBOARDING SKATE 511 SLIM 5 POCKET S&E PSK INDIGO WARP RINSE",
             "currentPrice": 2990.00,
             "previousPrice": 6000.00,
@@ -74,6 +79,7 @@
         }
     ],
     "shirt": [{
+        "id": 201,
         "name": "РУБАШКА MAKIA HARPER OVERSHIRT THYME",
         "currentPrice": 2999.00,
         "previousPrice": 5998.00,
@@ -222,6 +228,7 @@
     ],
     "hoodie": [
         {
+            "id": 301,
             "name": "ХУДИ LEVI'S SKATEBOARDING SKATE PULLOVER HOODIE POPPY RED",
             "currentPrice": 2690.00,
             "previousPrice": 5380.00,
@@ -402,6 +409,7 @@
     ],
     "jacket": [
         {
+            "id": 401,
             "name": "Overshirt Black",
             "currentPrice": 3500.00,
             "previousPrice": 7000.00,
@@ -627,6 +635,7 @@
     ],
     "skirts": [
         {
+            "id": 501,
             "name": "ЮБКА MAKIA BEAM SKIRT THYME",
             "currentPrice": 1399.00,
             "previousPrice": 2699.00,

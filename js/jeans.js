@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    let cart = [];
+
     fetch('catalog.json')
         .then(response => response.json())
         .then(json => {
@@ -11,6 +13,7 @@ $(document).ready(function() {
                 descr.classList.add('descr')
                 slider.classList.add('single-item', 's12', 'm4')
                 divCard.classList.add("item_box_card", 's12', 'm4');
+                divCard.id = product.id; // Добавление id к карточке товара
                 itemBox.append(divCard);
                 divCard.append(slider, descr);
                 descr.innerHTML = `
@@ -27,17 +30,16 @@ $(document).ready(function() {
                     img.setAttribute('data-lazy', url);
                     slider.append(img);
                 })
-            });
 
-            let likes = this.querySelectorAll('.like');
+                let like = document.querySelector(`#${product.id} .like`);
 
-            likes.forEach((like)=> {
-                like.addEventListener('click', ()=> {
-                    if (like.style.color == "black") {
-                        like.style.color = "red"
-                    } else { like.style.color = "black" }
+                like.addEventListener('click',()=> {
+                            if (like.style.color == "black") {
+                                console.log(product)
+                                like.style.color = "red"
+                            } else { like.style.color = "black" }
                 })
-            })
+            });
 
         })
         .then(() => {
