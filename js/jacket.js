@@ -1,6 +1,9 @@
 let jacket = document.querySelector('.jacket')
 let jacketProd = document.querySelector('.jacket_prod')
 
+$(document).ready(function(){
+    let card = []
+})
 fetch('catalog.json')
     .then(response => response.json())
     .then(json => {
@@ -8,7 +11,7 @@ fetch('catalog.json')
 
             jacket.innerHTML += `
             <div class="col s12 m4">
-            <div class="jacket_prod">
+            <div class="jacket_prod" id= '${item.id}'>                    
                     <div class="jacket_name">Бренд : ${item.name}</div>
                     <div class="carousel">
                     </div>
@@ -19,6 +22,7 @@ fetch('catalog.json')
                     <div class="jacket_categories">Категория:${item.categories}</div>
                     <div class="jacket_quantity">Количество:${item.quantity}</div>
                     <div class="jacket_color">Цвета в наличии: ${item.color}</div>
+                    <div class="like"><i class="fas fa-heart"></i></div>
                     <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Перейти к покупке</a>
                     </div>
                     </div>
@@ -37,24 +41,31 @@ fetch('catalog.json')
                 let categories = item.querySelector(".jacket_categories").innerHTML;
                 let quantity = item.querySelector(".jacket_quantity").innerText;
                 let color = item.querySelector(".jacket_color").innerText;
-                modalContent.innerHTML = `
-                <div class="jacket_name">Бренд : ${jacket_name}</div>
-                <img src="${carousel}" alt="">
-            <div>
-                    <div class="jacket_price">Цена :
-                    <div class="oldPrice">${oldPrice}</div>
-                    <div class="newprice">${newprice}</div>
-                    <div class="jacket_categories">Категория:${categories}</div>
-                    <div class="jacket_quantity">Количество:${quantity}</div>
-                    <div class="jacket_color">Цвета в наличии: ${color}</div>
-                    </div>
-                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Перейти к покупке</a>
-                    
-                `
-                console.log({ jacket_name }, { oldPrice }, { newprice }, carousel)
+                jacketProd.id = item.id
+            //     modalContent.innerHTML = `
+            //     <div class="jacket_name">Бренд : ${jacket_name}</div>
+            //     <img src="${carousel}" alt="">
+            // <div>
+            //         <div class="jacket_price">Цена :
+            //         <div class="oldPrice">${oldPrice}</div>
+            //         <div class="newprice">${newprice}</div>
+            //         <div class="jacket_categories">Категория:${categories}</div>
+            //         <div class="jacket_quantity">Количество:${quantity}</div>
+            //         <div class="jacket_color">Цвета в наличии: ${color}</div>
+            //         </div>
+            //
+            //     `
+
             })
+            let like = document.querySelector(`#${item.id} .like`);
+
+                like.addEventListener("click",(e)=>{
+                    if (like.style.color == "black") {
+                        like.style.color = "red"
+                    } else { like.style.color = "black" }
+                })
         })
-        // <div class="jacket_description">Описание: ${item.description}</div>
+
     }).then(() => {
     let slick = $('.carousel');
 
@@ -64,10 +75,6 @@ fetch('catalog.json')
         arrows: false,
     });
 })
-{/* <div class="jacket_categories">Категория:${item.categories}</div>
-                    <div class="jacket_quantity">Количество:${item.quantity}</div>
-                    <div class="jacket_color">Цвета в наличии: ${item.color}</div> */}
-
 
 let postImg = (array) => {
     let carousel = document.querySelectorAll('.carousel')

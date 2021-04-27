@@ -79,7 +79,7 @@
         }
     ],
     "shirt": [{
-        "id": 201,
+        "id": "shirt_201",
         "name": "РУБАШКА MAKIA HARPER OVERSHIRT THYME",
         "currentPrice": 2999.00,
         "previousPrice": 5998.00,
@@ -99,6 +99,7 @@
         ]
     },
         {
+            "id": "shirt_202",
             "name": "РУБАШКА MAKIA HARPER OVERSHIRT DARK NAVY",
             "currentPrice": 2999.00,
             "previousPrice": 5998.00,
@@ -118,6 +119,7 @@
             ]
         },
         {
+            "id": "shirt_203",
             "name": "РУБАШКА MAKIA FLAGSHIP SHIRT WHITE",
             "currentPrice": 2099.00,
             "previousPrice": 4198.00,
@@ -135,6 +137,7 @@
             ]
         },
         {
+            "id": "shirt_204",
             "name": "РУБАШКА MAKIA FLAGSHIP SHIRT BLUE",
             "currentPrice": 2099.00,
             "previousPrice": 4198.00,
@@ -152,6 +155,7 @@
             ]
         },
         {
+            "id": "shirt_205",
             "name": "РУБАШКА DIAMOND SUPPLY CO. MARQUISE OVERSHIRT ORANGE",
             "currentPrice": 2999.00,
             "previousPrice": 5998.00,
@@ -170,6 +174,7 @@
             ]
         },
         {
+            "id": "shirt_206",
             "name": "РУБАШКА HUF HEIGHTS LONG SLEEVE FLANNEL VINTAGE VIOLET",
             "currentPrice": 2459.00,
             "previousPrice": 4918.00,
@@ -189,6 +194,7 @@
             ]
         },
         {
+            "id": "shirt_207",
             "name": "РУБАШКА MAKIA FLAGSHIP SHIRT RED",
             "currentPrice": 1199.00,
             "previousPrice": 1398.00,
@@ -208,6 +214,7 @@
             ]
         },
         {
+            "id": "shirt_208",
             "name": "РУБАШКА DIAMOND SUPPLY CO. DMND X CHEVELLE SUPER SPORT WOVEN NAVY",
             "currentPrice": 1449.00,
             "previousPrice": 2898.00,
@@ -228,7 +235,7 @@
     ],
     "hoodie": [
         {
-            "id": 301,
+            "id": "hoodie_201",
             "name": "ХУДИ LEVI'S SKATEBOARDING SKATE PULLOVER HOODIE POPPY RED",
             "currentPrice": 2690.00,
             "previousPrice": 5380.00,
@@ -247,6 +254,7 @@
               "By releasing clothes under our own brand, we do not seek to reinvent the wheel, but offer what we wear ourselves."]
         },
         {
+            "id": "hoodie_202",
             "name": "ХУДИ DIAMOND SUPPLY CO. COLLEGIATE HOODIE TEAL",
             "currentPrice": 2799.00,
             "previousPrice": 5598.00,
@@ -265,6 +273,7 @@
               "It appeared already in 1981 and was founded by three guys - Kevin Thatcher, Eric Swenson, and Fausto Vitello. The magazine still exists, and there is also an Internet version of it."]
         },
         {
+            "id": "hoodie_203",
             "name": "ХУДИ MAKIA BRAND HOODED SWEATSHIRT BLACK",
             "currentPrice": 2999.00,
             "previousPrice": 5998.00,
@@ -283,6 +292,7 @@
               "The founders of the brand are twins Arthur and Henry D Angelo - Italian immigrants, who opened their company in 1947, from the very beginning putting on sports and selling snacks and branded souvenirs at sports events at Fenway Park Stadium in Boston. ",  "Ambition, work and love for the world of sports have led 47 to launch their own clothing line for sports fans as well as street style and American connoisseurs."]
         },
         {
+            "id": "hoodie_204",
             "name": "ХУДИ MAKIA BOLTON HOODED SWEATSHIRT LIGHT GREEN",
             "currentPrice": 2999.00,
             "previousPrice": 5998.00,
@@ -300,6 +310,7 @@
             "description":["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, eligendi."]
         },
         {
+            "id": "hoodie_205",
             "name": "ХУДИ DIAMOND SUPPLY CO. LOGO HOODIE PURPLE",
             "currentPrice": 2799.00,
             "previousPrice": 5598.00,
@@ -318,6 +329,7 @@
               "This brand is very popular among young people, namely those who love and devote their free time to sports."]
         },
         {
+            "id": "hoodie_206",
             "name": "ХУДИ THE NORTH FACE FINE HOODIE WROUGHT IRON",
             "currentPrice": 3299.00,
             "previousPrice": 6598.00,
@@ -336,6 +348,7 @@
                 "This brand is very popular among young people, namely those who love and devote their free time to sports."]
         },
         {
+            "id": "hoodie_207",
             "name": "ХУДИ DIAMOND SUPPLY CO. MONARCH HOODIE MILITARY GREEN",
             "currentPrice": 2299.00,
             "previousPrice": 4598.00,
@@ -353,6 +366,7 @@
                 "This brand is very popular among young people, namely those who love and devote their free time to sports."]
         },
         {
+            "id": "hoodie_208",
             "name": "ХУДИ THRASHER RAINBOW MAG HOOD BLACK",
             "currentPrice": 2249.00,
             "previousPrice": 4498.00,
@@ -371,6 +385,7 @@
                 "This brand is very popular among young people, namely those who love and devote their free time to sports."]
         },
         {
+            "id": "hoodie_209",
             "name": "ХУДИ THRASHER BLACK ICE HOOD BLACK",
             "currentPrice": 2249.00,
             "previousPrice": 4498.00,
@@ -389,6 +404,7 @@
                 "This brand is very popular among young people, namely those who love and devote their free time to sports."]
         },
         {
+            "id": "hoodie_210",
             "name": "ХУДИ THRASHER DIAMOND LOGO HOOD GOLD",
             "currentPrice": 2249.00,
             "previousPrice": 4498.00,
@@ -409,7 +425,7 @@
     ],
     "jacket": [
         {
-            "id": 401,
+            "id": "jacket_201",
             "name": "Overshirt Black",
             "currentPrice": 3500.00,
             "previousPrice": 7000.00,
@@ -432,6 +448,7 @@
             ]
         },
         {
+            "id": "jacket_202",
             "name": "DIAMOND SUPPLY CO. MARQUISE REVERSIBLE POLAR FLEECE MULTI",
             "currentPrice": 3300.00,
             "previousPrice": 6600.00,
@@ -455,6 +472,7 @@
             ]
         },
         {
+            "id": "jacket_203",
             "name": "DIAMOND SUPPLY CO. MARQUISE REVERSIBLE POLAR FLEECE BLACK",
             "currentPrice": 3300.00,
             "previousPrice": 6600.00,
@@ -476,6 +494,7 @@
             ]
         },
         {
+            "id": "jacket_204",
             "name": "РУБАШКА DIAMOND SUPPLY CO. MARQUISE OVERSHIRT ORANGE",
             "currentPrice": 3000.00,
             "previousPrice": 6000.00,
@@ -497,6 +516,7 @@
             ]
         },
         {
+            "id": "jacket_205",
             "name": "КУРТКА RIPNDIP NEO NERM REVERSIBLE FIELD PUFFER JACKET BLACK & TONAL GREEN",
             "currentPrice": 4000.00,
             "previousPrice": 8000.00,
@@ -522,6 +542,7 @@
             ]
         },
         {
+            "id": "jacket_206",
             "name": "КУРТКА ELLESSE ILLO PADDED JACKET BLACK",
             "currentPrice": 1800.00,
             "previousPrice": 3600.00,
@@ -544,6 +565,7 @@
             ]
         },
         {
+            "id": "jacket_207",
             "name": "КУРТКА ELLESSE MAZZO PARKA JACKET REFLECTIVE",
             "currentPrice": 3300.00,
             "previousPrice": 6600.00,
@@ -566,6 +588,7 @@
             ]
         },
         {
+            "id": "jacket_208",
             "name": "КУРТКА ELLESSE MAZZO PARKA JACKET BLACK",
             "currentPrice": 2800.00,
             "previousPrice": 4600.00,
@@ -587,6 +610,7 @@
             ]
         },
         {
+            "id": "jacket_209",
             "name": "КУРТКА ELLESSE REIDI JACKET BLUE",
             "currentPrice": 1800.00,
             "previousPrice": 3600.00,
@@ -610,6 +634,7 @@
             ]
         },
         {
+            "id": "jacket_210",
             "name": "КУРТКА ELLESSE REIDI JACKET BLACK",
             "currentPrice": 1800.00,
             "previousPrice": 3000.00,
@@ -635,7 +660,7 @@
     ],
     "skirts": [
         {
-            "id": 501,
+            "id": "skirts_501",
             "name": "ЮБКА MAKIA BEAM SKIRT THYME",
             "currentPrice": 1399.00,
             "previousPrice": 2699.00,
@@ -662,6 +687,7 @@
             ]
         },
         {
+            "id": "skirts_502",
             "name": "ЮБКА MAKIA BEAM SKIRT THYME",
             "currentPrice": 1299.00,
             "previousPrice": 2499.00,
@@ -688,6 +714,7 @@
             ]
         },
         {
+            "id": "skirts_503",
             "name": "ЮБКА MAKIA BEAM SKIRT THYME",
             "currentPrice": 1319.00,
             "previousPrice": 2199.00,
@@ -713,6 +740,7 @@
             ]
         },
         {
+            "id": "skirts_504",
             "name": "ЮБКА MAKIA BEAM SKIRT THYME",
             "currentPrice": 1019.00,
             "previousPrice": 2099.00,
@@ -738,6 +766,7 @@
             ]
         },
         {
+            "id": "skirts_505",
             "name": "ЮБКА ELLESSE ANNUZIATA SKIRT WHITE",
             "currentPrice": 419.00,
             "previousPrice": 699.00,
@@ -761,6 +790,7 @@
             ]
         },
         {
+            "id": "skirts_506",
             "name": "ЮБКА ELLESSE CONTENDER SKORT WHITE",
             "currentPrice": 839.00,
             "previousPrice": 1399.00,
@@ -784,6 +814,7 @@
             ]
         },
         {
+            "id": "skirts_507",
             "name": "ПЛАТЬЕ THE NORTH FACE TEE DRESS TNF BLACK",
             "currentPrice": 999.00,
             "previousPrice": 1999.00,
@@ -807,6 +838,7 @@
             ]
         },
         {
+            "id": "skirts_508",
             "name": "ПЛАТЬЕ THE NORTH FACE TEE DRESS LIGHT PINK",
             "currentPrice": 1299.00,
             "previousPrice": 2499.00,
@@ -830,6 +862,7 @@
             ]
         },
         {
+            "id": "skirts_509",
             "name": "ЖЕНСКИЙ КОМБИНЕЗОН ELLESSE LORON PLAYSUIT BLACK",
             "currentPrice": 639.00,
             "previousPrice": 1279.00,
