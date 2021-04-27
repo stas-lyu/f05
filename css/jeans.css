@@ -10,7 +10,10 @@
 
 .item_box_card {
     margin: 10px;
-    width: 300px;
+    width: 245px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .item_box {
@@ -18,12 +21,24 @@
     flex-wrap: wrap;
 }
 
-.old_price_jeans {
+.old_price_jeans,
+.old_price_modal {
     text-decoration: line-through;
     color: rgba(0, 0, 0, .4);
-    padding-right: 20px;
-    font-size: 25px;
-    color: red;
+    padding-left: 20px;
+    font-size: 20px;
+    color: rgb(145, 145, 145);
+}
+
+.new_price_jeans,
+.new_price_modal {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.old_price_modal,
+.new_price_modal {
+    font-size: 30px !important;
 }
 
 .prise_jeans,
@@ -39,12 +54,6 @@
 
 .prise_jeans b {
     padding-right: 10px;
-}
-
-.new_price_jeans {
-    font-size: 25px;
-    font-weight: 600;
-    color: green;
 }
 
 .flex-icon {
@@ -78,14 +87,51 @@
     color: grey;
 }
 
+.modalImg {
+    width: 50%;
+}
 
-/* .b-lazy {
-    width: 100px !important;
-    height: 100px !important;
-} */
+.modal_content {
+    display: flex;
+}
 
-@media only screen and (min-width: 601px) {
-    .row .col.m6 {
-        width: 100%;
-    }
+.modal_desc {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.modal_prices {
+    padding: 20px 0px;
+}
+
+.count {
+    padding: 20px 0px 20px 20px;
+}
+
+.count>button {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(231, 231, 231);
+    border: none;
+}
+
+.modal_desc>p {
+    padding-left: 20px;
+}
+
+.inputs {
+    padding-left: 20px;
+}
+
+.modal_new {
+    max-height: 100%;
+    top: 5% !important;
+}
+
+#button_send {
+    width: 100px;
+    height: 40px;
+    margin: 20px 0;
+    font-size: 15px;
 }
