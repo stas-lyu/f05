@@ -48,6 +48,7 @@ fetch('catalog.json')
                     <div class="jacket_quantity">Количество:${quantity}</div>
                     <div class="jacket_color">Цвета в наличии: ${color}</div>
                     </div>
+                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Перейти к покупке</a>
                     
                 `
                 console.log({ jacket_name }, { oldPrice }, { newprice }, carousel)
@@ -55,14 +56,14 @@ fetch('catalog.json')
         })
         // <div class="jacket_description">Описание: ${item.description}</div>
     }).then(() => {
-        let slick = $('.carousel');
+    let slick = $('.carousel');
 
-        slick.slick({
-            lazyLoad: 'progressive',
-            dots: true,
-            arrows: false,
-        });
-    })
+    slick.slick({
+        lazyLoad: 'progressive',
+        dots: true,
+        arrows: false,
+    });
+})
 {/* <div class="jacket_categories">Категория:${item.categories}</div>
                     <div class="jacket_quantity">Количество:${item.quantity}</div>
                     <div class="jacket_color">Цвета в наличии: ${item.color}</div> */}

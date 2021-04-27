@@ -17,6 +17,7 @@ $(document).ready(function() {
             <p class="product_name">${product.name}</p> 
             <span class="new_price_jeans">${product.currentPrice}$</span>
             <span class="old_price_jeans">${product.previousPrice}$</span>
+                        <div class="like"><i class="fas fa-heart"></i></div>
             <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Купить</a></p>
             `
 
@@ -50,6 +51,7 @@ $(document).ready(function() {
                     modal.innerHTML = `
                     <h4>${productName.innerText}</h4>
                     <div class='modal_content'> 
+                      
                         <img class="modalImg"src='${image.src}'> 
                         <div class="modal_desc">
                         <div class="modal_prices">
