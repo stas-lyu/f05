@@ -1,25 +1,24 @@
 $(document).ready(function() {
-
+    let count = 0
     let cart = [];
 
     fetch('catalog.json')
         .then(response => response.json())
         .then(json => {
+            return json.shirt
+        })
+        .then(json => {
             console.log(json)
-
             let row = document.querySelector('.shirt-box')
-            json.shirt.forEach(element => {
+            json.forEach(element => {
                 row.innerHTML += `
                 <div id='${element.id}' class=" col s12 m4 shirt_product">
-
                 <div class="carusel-shirt">
                      </div>
-
                      <p class="shirt_name">Названые: ${element.name}</p>
                     <div class="price"> Цена :
                      <span class="oldPrice">${element.previousPrice} ₴</span>
                     <span class="newPrice">${element.currentPrice} ₴</span>
-                    
                     </div>
                     <div class="modalInfo">
                     <div class="shirt-brand">${element.brand}</div>
@@ -31,29 +30,25 @@ $(document).ready(function() {
                     <i class="fas addCard fa-cart-plus"></i>
                     </div>
                      </div>
-              
                 `
-                postImg(element.imageUrls)
+                let addCardBtn = document.querySelector(`#${element.id} .addCard`);
+                console.log(addCardBtn, count++)
 
-                let addCardBtns = document.querySelectorAll(`.addCard`);
-
-                addCardBtns.forEach((item)=> {
-                    item.addEventListener('click', ()=> {
+                    addCardBtn.addEventListener('click', ()=> {
                         console.log(cart)
-                        if (item.style.color == "red") {
-                            item.style.color = "black"
+                        if (addCardBtn.style.color === "red") {
+                            addCardBtn.style.color = "black"
                             cart.forEach((value, key) => {
                                 if (value.id === `${element.id}`)
                                     delete cart[key]
                             })
                             console.log(cart)
                         } else {
-                            item.style.color = "red"
+                            addCardBtn.style.color = "red"
                             cart.push(element);
                             console.log(cart)
                         }
                     })
-                })
 
                 // let addCard = document.querySelector(`#${element.id} .addCard`);
 
@@ -70,6 +65,7 @@ $(document).ready(function() {
                 //         cart.push(element);
                 //     }
                 // })
+                postImg(element.imageUrls)
 
             });
         }).then(() => {

@@ -1,6 +1,6 @@
 let jacket = document.querySelector('.jacket')
 let jacketProd = document.querySelector('.jacket_prod')
-
+let cart = [];
 fetch('catalog.json')
     .then(response => response.json())
     .then(json => {
@@ -29,7 +29,6 @@ fetch('catalog.json')
             postImg(list.imageUrls)
 
             $(document).ready(function () {
-                let cart = [];
                 let like = document.querySelector(`#${list.id} .like`);
                 like.addEventListener('click', (e) => {
                     e.stopPropagation();
@@ -47,6 +46,7 @@ fetch('catalog.json')
                         console.log(cart)
                     }
                 })
+
             });
 
 
@@ -113,15 +113,32 @@ let postImg = (array) => {
     })
 }
 
-// $('.modal2').modal();
-// let modalContent2 = document.querySelector(".modal-content_2");
-// let cart = item.querySelector('.cart');
-// cart.forEach((item) => {
-//     item.addEventListener("click", () => {
-//
-//         console.log(cart)
-//         modalContent2.innerHTML = `
-//         <p>${cart}</p>
-//     `
-//     })
-// })
+$('.modal2').modal();
+let bag = document.querySelector(".bag");
+let modal2 = document.querySelector(".modal-content_2");
+let cardBox = document.querySelector("#card_box");
+cardBox.addEventListener("click", () => {
+        cardBox.innerHTML = ``;
+        cart.forEach((e) => {
+            console.log(1)
+            bag.innerHTML += `
+        <div class='card_box'>
+        <span class='delete'><i class="fas fa-trash-alt"></i></span>
+        <img class="cart_img"src='${e.imageUrls[0]}'> 
+        <div class='modal2_name_color'>
+        <span>${e.name.slice(0, 25) + ' ...'}</span>
+        <span style="color:${e.color};" >${e.color}</span>
+        </div>
+        <div class="count">
+                <span class="minus"><i class="fas fa-minus"></i></span>
+                <input class="counter" type="text" value="1">
+                <span class="plus"><i class="fas fa-plus"></i></span>
+        </div>
+        <p class='price_sum'>$ ${e.currentPrice}</p>
+        </div>
+        </div>
+`
+
+        })
+    }
+)

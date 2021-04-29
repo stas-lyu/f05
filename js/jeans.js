@@ -1,11 +1,95 @@
 $(document).ready(function () {
+    const modal2 = document.querySelector("#modal2 .modal-content");
+    const cardBox = document.querySelector('#card_box');
+    const shoppBag = document.querySelector('.shopping_bag')
 
     let cart = [];
+
+    // function deleteCartItem(item, id, el) {
+    //     item.addEventListener('click', () => {
+    //         cart.forEach((value, key) => {
+    //             if (value.id === id)
+    //                 delete cart[key]
+    //         })
+    //         el.innerHTML = ''
+    //         renderCart(cart)
+    //     })
+    // }
+
+    function deleteCartItem(id, el) {
+            cart.forEach((value, key) => {
+                if (value.id === id)
+                    delete cart[key]
+            })
+            el.innerHTML = ''
+            renderCart(cart)
+    }
+
+    // function plusItemCart(element, json) {
+    //     element.addEventListener("click", (item) => {
+    //         let price = json.currentPrice;
+    //         let plus = $(`#plus_${json.id}`);
+    //         let minus = $(`#minus_${json.id}`);
+    //         let result = $(`#result_${json.id}`);
+    //         let count = $(`#count_${json.id}`);
+    //
+    //             plus.addEventListener('click', ()=> {
+    //                 price += e.currentPrice;
+    //                 count.attr('value', parseInt(count.val()) + 1);
+    //                 minus.css('visibility', 'visible')
+    //                 result.text("$ " + price)
+    //             })
+    //     })
+    // }
+
+    function render(el, item) {
+        let container = document.createElement('div').classList.add('.cart_box');
+
+        let deleteBtn = document.createElement('span');
+        let img = document.createElement('img');
+        img.src = `${item.imageUrls[0]}`
+        let id = `${item.id}`;
+
+        deleteBtn.addEventListener('click', deleteCartItem(id, el))
+
+        container.append(deleteBtn, img)
+
+        el.innerHTML += `
+                        <div class='cart_box'>
+                        <span id="delete_${item.id}" class='delete'><i class="fas fa-trash-alt"></i></span>
+                        <img class="cart_img"src='${item.imageUrls[0]}'> 
+                        <div class='modal2_name_color'>
+                        <span>${item.name.slice(0, 25) + ' ...'}</span>
+                        <span style="color:${item.color};" >${item.color}</span>
+                        </div>
+                        <div class="count">
+                                <span id="minus_${item.id}" class="minus"><i class="fas fa-minus"></i></span>
+                                <input id="count_${item.id}" class="counter" type="text" value="1">
+                                <span id="plus_${item.id}" class="plus"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <p id="result_${item.id}" class='price_sum'>$ ${item.currentPrice}</p>
+                        </div>
+                       
+                        </div>
+                    `
+
+        deleteCartItem(document.querySelector(`#delete_${item.id}`), `${item.id}`, el)
+    }
+
+
+    function renderCart(cart) {
+        cart.forEach((e)=> {
+            render(shoppBag, e);
+        })
+    }
 
     fetch('catalog.json')
         .then(response => response.json())
         .then(json => {
-            json.jeans.forEach((product) => {
+            return json.jeans
+        })
+        .then(json => {
+            json.forEach((product) => {
                 let itemBox = document.querySelector('.item_box')
                 let divCard = document.createElement('div')
                 let slider = document.createElement('div')
@@ -53,76 +137,49 @@ $(document).ready(function () {
                 })
 
             });
-            const modal2 = document.querySelector("#modal2 .modal-content");
-            const cardBox = document.querySelector('#card_box');
-            const shoppBag = document.querySelector('.shopping_bag')
+
+
 
             cardBox.addEventListener('click', () => {
 
 
                 shoppBag.innerHTML = ``;
-                cart.forEach((e) => {
 
-                    shoppBag.innerHTML += `
-                        <div class='cart_box'>
-                        <span class='delete'><i class="fas fa-trash-alt"></i></span>
-                        <img class="cart_img"src='${e.imageUrls[0]}'> 
-                        <div class='modal2_name_color'>
-                        <span>${e.name.slice(0, 25) + ' ...'}</span>
-                        <span style="color:${e.color};" >${e.color}</span>
-                        </div>
-                        <div class="count">
-                                <span id="minus_${e.id}" class="minus"><i class="fas fa-minus"></i></span>
-                                <input id="count_${e.id}" class="counter" type="text" value="1">
-                                <span id="plus_${e.id}" class="plus"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <p id="result_${e.id}" class='price_sum'>$ ${e.currentPrice}</p>
-                        </div>
-                       
-                        </div>
-                    `
-                    let price = e.currentPrice;
+                renderCart(cart)
 
-                    let plus = $(`#plus_${e.id}`);
-                    let minus = $(`#minus_${e.id}`);
-                    let result = $(`#result_${e.id}`);
-                    let count = $(`#count_${e.id}`)
-
-                    plus.click(function () {
-                        console.log('click')
-                        price += e.currentPrice;
-                        count.attr('value', parseInt(count.val()) + 1);
-                        minus.css('visibility', 'visible')
-                        result.text("$ " + price)
-
-                    });
-                    minus.click(function () {
-                        price -= e.currentPrice;
-                        count.attr('value', parseInt(count.val()) - 1);
-                        if (count.val() == 0) {
-                            minus.css('visibility', 'hidden')
-                        } else {
-                        }
-                        result.text("$ " + price)
-
-
-                    })
-                    console.log(price);
-
-                    let deleteItem = document.querySelector('.delete')
-
-                    console.log(deleteItem);
-                    deleteItem.addEventListener('click', () => {
-                        cart.forEach((value, key) => {
-                            if (value.id === `${e.id}`)
-                                delete cart[key]
-
-
-                        })
-                    })
-
-
-                });
+                // cart.forEach((e) => {
+                //     render(shoppBag);
+                //     let price = e.currentPrice;
+                //     let plus = $(`#plus_${e.id}`);
+                //     let minus = $(`#minus_${e.id}`);
+                //     let result = $(`#result_${e.id}`);
+                //     let count = $(`#count_${e.id}`)
+                //
+                //     plus.click(function () {
+                //         console.log('click')
+                //         price += e.currentPrice;
+                //         count.attr('value', parseInt(count.val()) + 1);
+                //         minus.css('visibility', 'visible')
+                //         result.text("$ " + price)
+                //     });
+                //     minus.click(function () {
+                //         price -= e.currentPrice;
+                //         count.attr('value', parseInt(count.val()) - 1);
+                //         if (count.val() == 0) {
+                //             minus.css('visibility', 'hidden')
+                //         } else {
+                //         }
+                //         result.text("$ " + price)
+                //     })
+                //     console.log(price);
+                //
+                //     let deleteItem = document.querySelectorAll('.delete')
+                //
+                //
+                //     deleteCartItem(deleteItem);
+                //
+                //
+                // });
 
 
             })
