@@ -72,33 +72,38 @@ $(document).ready(function () {
                         <span style="color:${e.color};" >${e.color}</span>
                         </div>
                         <div class="count">
-                                <span class="minus"><i class="fas fa-minus"></i></span>
-                                <input class="counter" type="text" value="1">
-                                <span class="plus"><i class="fas fa-plus"></i></span>
+                                <span id="minus_${e.id}" class="minus"><i class="fas fa-minus"></i></span>
+                                <input id="count_${e.id}" class="counter" type="text" value="1">
+                                <span id="plus_${e.id}" class="plus"><i class="fas fa-plus"></i></span>
                         </div>
-                        <p class='price_sum'>$ ${e.currentPrice}</p>
+                        <p id="result_${e.id}" class='price_sum'>$ ${e.currentPrice}</p>
                         </div>
                        
                         </div>
                     `
-
                     let price = e.currentPrice;
 
-                    $(".plus").click(function () {
+                    let plus = $(`#plus_${e.id}`);
+                    let minus = $(`#minus_${e.id}`);
+                    let result = $(`#result_${e.id}`);
+                    let count = $(`#count_${e.id}`)
+
+                    plus.click(function () {
+                        console.log('click')
                         price += e.currentPrice;
-                        $(".counter").attr('value', parseInt($(".counter").val()) + 1);
-                        $(".minus").css('visibility', 'visible')
-                        $('.price_sum').text("$ " + price)
+                        count.attr('value', parseInt(count.val()) + 1);
+                        minus.css('visibility', 'visible')
+                        result.text("$ " + price)
 
                     });
-                    $(".minus").click(function () {
+                    minus.click(function () {
                         price -= e.currentPrice;
-                        $(".counter").attr('value', parseInt($(".counter").val()) - 1);
-                        if ($(".counter").val() == 0) {
-                            $(".minus").css('visibility', 'hidden')
+                        count.attr('value', parseInt(count.val()) - 1);
+                        if (count.val() == 0) {
+                            minus.css('visibility', 'hidden')
                         } else {
                         }
-                        $('.price_sum').text("$ " + price)
+                        result.text("$ " + price)
 
 
                     })

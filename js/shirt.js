@@ -39,15 +39,18 @@ $(document).ready(function() {
 
                 addCardBtns.forEach((item)=> {
                     item.addEventListener('click', ()=> {
+                        console.log(cart)
                         if (item.style.color == "red") {
                             item.style.color = "black"
                             cart.forEach((value, key) => {
                                 if (value.id === `${element.id}`)
                                     delete cart[key]
                             })
+                            console.log(cart)
                         } else {
                             item.style.color = "red"
                             cart.push(element);
+                            console.log(cart)
                         }
                     })
                 })
