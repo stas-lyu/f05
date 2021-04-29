@@ -43,3 +43,7 @@
     align-items: center;
     gap: 20px;
 }
+
+.modalBox {
+    font-size: 1.2em;
+}

@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+    let cart = [];
+
     fetch('catalog.json')
         .then(response => response.json())
         .then(json => {
@@ -7,7 +10,7 @@ $(document).ready(function() {
             let row = document.querySelector('.shirt-box')
             json.shirt.forEach(element => {
                 row.innerHTML += `
-                <div class=" col s12 m4 shirt_product">
+                <div id='${element.id}' class=" col s12 m4 shirt_product">
 
                 <div class="carusel-shirt">
                      </div>
@@ -25,13 +28,28 @@ $(document).ready(function() {
                     </div>
                     <div class="orderBox">
                     <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Заказать</a>
-                    <div class="like"><i class="fas addCart fa-cart-plus"></i></div>
+                    <i class="fas addCard fa-cart-plus"></i>
                     </div>
                      </div>
               
                 `
                 postImg(element.imageUrls)
 
+                let addCard = document.querySelector(`#${element.id} .addCard`);
+
+                addCard.addEventListener('click', (e) => {
+                    console.log(e)
+                    if (addCard.style.color == "red") {
+                        addCard.style.color = "black"
+                        cart.forEach((value, key) => {
+                            if (value.id === `${element.id}`)
+                                delete cart[key]
+                        })
+                    } else {
+                        addCard.style.color = "red"
+                        cart.push(element);
+                    }
+                })
 
             });
         }).then(() => {
@@ -48,7 +66,7 @@ $(document).ready(function() {
                     let shirtName = el.querySelector('.shirt_name');
                     let image = el.querySelector('.img-shirt')
                     modalShirt.innerHTML = `
-                    <div class="row">
+                    <div class="row modalBox">
 
                     <div class="col s12 m6">
                     <img class="modal-img" src='${image.src}'> 
@@ -90,6 +108,8 @@ $(document).ready(function() {
                 lazyLoad: 'progressive',
                 slidesToShow: 1,
             });
+
+
         })
 
     let postImg = (array) => {
