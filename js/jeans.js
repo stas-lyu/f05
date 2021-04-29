@@ -47,12 +47,15 @@ $(document).ready(function () {
 
         let deleteBtn = document.createElement('span');
         let img = document.createElement('img');
-        img.src = `${item.imageUrls[0]}`
-        let id = `${item.id}`;
+        img.src = item.imageUrls[0]
+        let id = item.id;
 
         deleteBtn.addEventListener('click', deleteCartItem(id, el))
 
         container.append(deleteBtn, img)
+
+    }
+
 
         el.innerHTML += `
                         <div class='cart_box'>
@@ -75,7 +78,6 @@ $(document).ready(function () {
 
         deleteCartItem(document.querySelector(`#delete_${item.id}`), `${item.id}`, el)
     }
-
 
     function renderCart(cart) {
         cart.forEach((e)=> {
