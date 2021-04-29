@@ -79,6 +79,7 @@ $(document).ready(function() {
                         </div>
                         <p class='price_sum'>$ ${e.currentPrice}</p>
                         </div>
+                       
                         </div>
                     `
 
