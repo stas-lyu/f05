@@ -1,0 +1,68 @@
+.jacket_price {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+  }
+  .jacket_prod{
+      width: 300px;
+      height: 630px;
+  }
+  .slick-slide .slick-current .slick-active{
+      width: 300px;
+      height: 300px;
+      background-size: cover !important;
+  }
+  .jacket_name{
+    width: 300px;
+    height: 50px;
+      font-weight: 600;
+text-align: center; 
+  }
+  .jacket_price{
+      text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+  }
+  .jacket_categories{
+    text-align: center;
+    font-weight: 600;
+  }
+  .jacket_quantity{
+    text-align: center;
+    font-weight: 600;
+  }
+  .jacket_color{
+    text-align: center;
+    font-weight: 600;
+  }
+  .like{
+      float: right;
+  }
+  .mt_10{
+    margin-top: 10px;
+  }
+  .btnSize{
+      padding-top: 5px;
+      height: 45px;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      background-color: black;
+  }
+  .flex{
+      display: flex;
+  }
+  .jacketModalImgSize{
+      width: 425px;
+  }
+  .modalImg{
+      width: 100%;
+  }
+  .jacketModalTextSize{
+    text-align: center;
+    padding: 100px;
+  }
+  .modal-content_2, .modal-overlay{
+    background-color: white;
+  }

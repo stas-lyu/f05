@@ -1,76 +1,169 @@
 const hoodieBlock = document.querySelector('.hoodie_block');
-const modalHoodie = document.querySelector('.modal-content');
+let carts = [];
+
+
 
 fetch(`catalog.json`)
     .then(response => response.json())
     .then(json => {
         json.hoodie.forEach(element => {
-            let img = "";
-            element.imageUrls.forEach((prod) => {
-                img += `<img class="image-hoodie" src="${prod}"/>`
-            });
-            hoodieBlock.innerHTML += `
-                <div class="hoodie_prod" id="${element.id}">
-                    <div class="single-items productImg-hoodie">${img}</div>
-                    <div class="hoodie_name div-in-hoodie">${element.name}</div>
-                    <div class="priceHoodie" style="display: flex; font-size: 18px;">
-                    <div class="currentPrice-hoodie div-in-hoodie">Цена: ${element.currentPrice}₴</div>
-                    <div class="newPrice-hoodie div-in-hoodie" style="text-decoration: line-through; margin-left:20px; color: #a1a0a0;">${element.previousPrice}₴</div>
-                    </div>
-                    <div class="like"><i class="fas fa-heart"></i></div>
-                    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-                    <div class="hoodie-display">
-                    <div class="color-hoodie div-in-hoodie">${element.color}</div>
-                    <div class="brand-hoodie div-in-hoodie">${element.brand}</div>
-                    <div class="parametrs-hoodie div-in-hoodie">${element.parametrs}</div>
-                    <div class="description-hoodie div-in-hoodie">${element.description}</div>
-                    </div>
-                    </div>
-        `
-            let like = document.querySelector(`#${element.id} .like`);
 
-            like.addEventListener('click',()=> {
-                if (like.style.color == "black") {
-                    like.style.color = "red"
-                    console.log('test!')
-                } else { like.style.color = "black" }
+            let productHoodie = document.createElement('div');
+            let sliderHoodie = document.createElement('div');
+            let containerHoodie = document.createElement('div');
+
+            containerHoodie.classList.add('hoodieContainer', 'col', 's12', 'm4');
+            productHoodie.classList.add('descriptionHoodie');
+            sliderHoodie.classList.add('single-itemHoodie');
+            productHoodie.id = element.id;
+
+            containerHoodie.append(sliderHoodie, productHoodie);
+            hoodieBlock.append(containerHoodie);
+
+            productHoodie.innerHTML += `
+            <p class="hoodie_name" style="font-weight: lighter">${element.name}</p>
+            <div class="priceHoodie" style="display: flex; font-size: 18px; font-weight: bold;" >
+            <p class="currentPrice-hoodie">${element.currentPrice}₴</p>            
+            <p class="newPrice-hoodie" style="color: #afaeae;text-decoration: line-through; margin-left: 20px;">${element.previousPrice}₴</p>
+            </div>
+             <i class="fas addCartHoodie fa-cart-plus"></i>
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Заказать</a>  
+            <div class="hoodie-display">
+            <p class="brand-hoodie">${element.brand}</p>
+            <p class="color-hoodie">Цвет: ${element.color}</p>
+            <p class="parametrs-hoodie">Наличие: ${element.quantity} шт.</p> 
+            <p class="description-hoodie">${element.description}</p>
+            </div>
+            `
+            element.imageUrls.forEach((url) => {
+                let imgHoodie = document.createElement('img');
+                imgHoodie.classList.add('hoodieImage');
+                imgHoodie.src = url;
+                imgHoodie.setAttribute('data-lazy', url);
+                sliderHoodie.append(imgHoodie);
+            })
+
+            let addCartHoodie = document.querySelector(`#${element.id} .addCartHoodie`);
+
+            addCartHoodie.addEventListener('click',()=> {
+                if (addCartHoodie.style.color === "red") {
+                    addCartHoodie.style.color = "black"
+                    carts.forEach((value, key) => {
+                        if (value.id === `${element.id}`)
+                            delete carts[key]
+                        console.log(carts)
+                    })
+                } else{
+                    addCartHoodie.style.color = "red"
+                    carts.push(element);
+                    console.log(carts)
+                }
             })
         });
     })
     .then(()=> {
-        let hoodieProd = document.querySelectorAll('.hoodie_prod');
-        hoodieProd.forEach(item => {
-            item.addEventListener('click', () => {
-                let productNameHoodie = item.querySelector('.hoodie_name');
-                let productPriceHoodie = item.querySelector('.currentPrice-hoodie');
-                let productColorHoodie = item.querySelector('.color-hoodie');
-                let productBrandHoodie = item.querySelector('.brand-hoodie');
-                let productParametrsHoodie = item.querySelector('.parametrs-hoodie');
-                let productDescriptionHoodie = item.querySelector('.description-hoodie');
-                let productImgHoodie = item.querySelector('.image-hoodie');
-                modalHoodie.innerHTML = `
-                <img src="${productImgHoodie.src}" alt="" style="width: 400px;">
-                <p><span>Название:</span>${productNameHoodie.innerText}</p>
-                <p><span>Брэнд:</span>${productBrandHoodie.innerText}</p>
-                <p><span>Цвет:</span>${productColorHoodie.innerText}</p>
-                <p><span>Параметры:</span>${productParametrsHoodie.innerText}</p>
-                <p><span>Описание:</span>${productDescriptionHoodie.innerText}</p>
-                <p><span>Цена:</span>${productPriceHoodie.innerText}</p>
-                <form style="padding: 25px 25px 70px 25px" id="formInModal" action="">
-                    <label for="name">
-                    <input type="text" name="name" id="name" placeholder="Ivan Ivanov">
-                    </label>
-                    <label for="phone">
-                    <input type="text" name="phone" id="phone" placeholder="+3809966546453">
-                    </label>
-                    <input style="float:right; background-color: #000; color: #fff; border: none; padding: 10px 15px;" type="button" value="Заказать">
-                </form>
+        const modalHoodie = document.querySelector('.modal-content');
+        let hoodieContainer = document.querySelectorAll('.hoodieContainer');
+
+        hoodieContainer.forEach((link)=>{
+            link.addEventListener('click', ()=>{
+                let productHoodieCurrentPrice = link.querySelector('.currentPrice-hoodie').innerText;
+                let productHoodieName = link.querySelector('.hoodie_name').innerText;
+                let productHoodieBrand = link.querySelector('.brand-hoodie').innerText;
+                let productHoodiePrevPrice = link.querySelector('.newPrice-hoodie').innerText;
+                let productHoodieDescr = link.querySelector('.description-hoodie').innerText;
+                let productHoodieColor = link.querySelector('.color-hoodie').innerText;
+                let productHoodieParam = link.querySelector('.parametrs-hoodie').innerHTML;
+
+                let modalSkirtGallery = link.querySelector('.single-itemHoodie').innerHTML;
+                let modalSkirtImg = link.querySelector('.hoodieImage').src;
+
+                modalHoodie.innerHTML =`
+                <div class="modalSkirt row">
+                 <div class="col s12 m6">
+                <img class="modalImgHoodie" src="${modalSkirtImg}" alt="Product"></div>
+                <div class="modalDescr col s12 m6">
+                     <p style="font-weight: lighter;font-size: 30px;">${productHoodieName}</p>
+                     <p><span style="font-weight: bold">Brand: </span>${productHoodieBrand}</p>
+                     <p style="font-weight: bold; font-size: 30px; margin-bottom: 0">${productHoodieCurrentPrice}</p>
+                     <p style="opacity: 0.7;text-decoration: line-through;margin-top: 0">${productHoodiePrevPrice}</p>
+                     <p><span style="font-weight: bold">ОПИСАНИЕ</span><br></br>${productHoodieDescr}</p>
+                     <p>${productHoodieColor}</p>
+                     <div>${productHoodieParam}</div>
+                      <form class="d-flex flex-column">
+                      <div class="form">
+                       <input placeholder="Введите свое имя" type="text" name="name" required>
+                       <input placeholder="Введите свой номер телефона" type="text" name="phone" required>
+                       <button class="btnOrder" type="submit">Заказать</button>
+                      </div>
+                  </form>
+                </div>
+                </div>
                 `
             })
         })
     })
+    .then(()=> {
+        let modalContentStore = document.querySelector('#modal2 .modal-content');
+        let hoodieContainer = document.querySelectorAll('.hoodieContainer');
+
+        hoodieContainer.forEach((link)=>{
+            let modalSkirtImg = link.querySelector('.hoodieImage').src;
+            let productHoodieName = link.querySelector('.hoodie_name').innerText;
+            let productHoodieColor = link.querySelector('.color-hoodie').innerText;
+            let currentPriceHoodie = link.querySelector('.currentPrice-hoodie').innerText;
+
+            modalContentStore.innerHTML = `
+            <h6 style="font-size: 22px; margin: 0; opacity: 0.4; font-weight: bold;">Shopping bag</h6>
+            <div class="mainContentModalStore" style="display: flex; align-items: center;">
+               <div class="iconsModalStore marginBlocks" style="display: flex; font-size: 20px;">
+                <p style="margin-right: 30px;"><i class="fas fa-times"></i></p>
+                <p><i class="fas fa-heart"></i></p>
+                </div>
+                
+               <div class="modalInfoBlock marginBlocks" style="width: 400px; display: flex;">
+               <div>
+                <img class="modalImgHoodie" style="width: 150px;" src="${modalSkirtImg}" alt="Product">
+                </div>
+                <div style="margin-top: 50px;">
+                    <p class="modalInfo" style="display: flex; flex-direction: column;">${productHoodieName}<span style="opacity: 0.5;">${productHoodieColor}</span></p>
+                    </div>
+               </div>
+               
+              <div class="plusMinesModalStore marginBlocks" style="font-size: 25px; display: flex; align-items: center;">
+                <button id="countPlus" class="modalSecondBtn" style="margin-right: 15px;">+</button>
+                <p class="resultPlusMines">0</p>
+                <button id="countMines" disabled="disabled" class="modalSecondBtn" style="margin-left: 15px;">-</button>
+              </div>
+              
+            <div class="finnalSummModalStore marginBlocks">
+              <p id="finalSummModal" style="font-size: 18px;">${currentPriceHoodie}</p>
+            </div>
+             </div>
+             </div>
+            `
+            let countPlus = document.querySelector('#countPlus');
+            let countMines = document.querySelector('#countMines');
+            let resultPlusMines = document.querySelector('.resultPlusMines');
+            let finalSummModal = document.querySelector('#finalSummModal');
+            let count = 0;
+            countPlus.addEventListener('click', ()=> {
+                resultPlusMines.innerText = count+=1
+                if(count > 0) {
+                    countMines.removeAttribute("disabled");
+                }else{}
+            })
+
+            countMines.addEventListener('click', ()=> {
+                resultPlusMines.innerText = count-=1
+                if(count <= 0) {
+                    countMines.setAttribute("disabled", "disabled");
+                }else{}
+            })
+        })
+    })
     .then(() => {
-        let slicks = $('.single-items');
+        let slicks = $('.single-itemHoodie');
         slicks.slick({
             lazyLoad: 'ondemand',
             dots: true,

@@ -39,3 +39,12 @@
 .hoodie-display {
     display: none;
 }
+.modalImgHoodie {
+    width: 300px;
+}
+.marginBlocks {
+    margin: 0 20px;
+}
+.modalSecondBtn {
+    cursor: pointer;
+}

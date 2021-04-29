@@ -33,32 +33,114 @@ $(document).ready(function () {
 
                 let addCart = document.querySelector(`#${product.id} .addCart`);
 
+
                 addCart.addEventListener('click', (e) => {
                     if (addCart.style.color == "red") {
                         addCart.style.color = "black"
+
                         cart.forEach((value, key) => {
                             if (value.id === `${product.id}`)
                                 delete cart[key]
                         })
+                        console.log(cart);
                     } else {
                         addCart.style.color = "red"
                         cart.push(product);
+
+
                     }
+
                 })
+
             });
+            const modal2 = document.querySelector("#modal2 .modal-content");
+            const cardBox = document.querySelector('#card_box');
+            const shoppBag = document.querySelector('.shopping_bag')
+
+            cardBox.addEventListener('click', () => {
+
+
+                shoppBag.innerHTML = ``;
+                cart.forEach((e) => {
+
+                    shoppBag.innerHTML += `
+                        <div class='cart_box'>
+                        <span class='delete'><i class="fas fa-trash-alt"></i></span>
+                        <img class="cart_img"src='${e.imageUrls[0]}'> 
+                        <div class='modal2_name_color'>
+                        <span>${e.name.slice(0, 25) + ' ...'}</span>
+                        <span style="color:${e.color};" >${e.color}</span>
+                        </div>
+                        <div class="count">
+                                <span class="minus"><i class="fas fa-minus"></i></span>
+                                <input class="counter" type="text" value="1">
+                                <span class="plus"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <p class='price_sum'>$ ${e.currentPrice}</p>
+                        </div>
+                       
+                        </div>
+                    `
+
+                    let price = e.currentPrice;
+
+                    $(".plus").click(function () {
+                        price += e.currentPrice;
+                        $(".counter").attr('value', parseInt($(".counter").val()) + 1);
+                        $(".minus").css('visibility', 'visible')
+                        $('.price_sum').text("$ " + price)
+
+                    });
+                    $(".minus").click(function () {
+                        price -= e.currentPrice;
+                        $(".counter").attr('value', parseInt($(".counter").val()) - 1);
+                        if ($(".counter").val() == 0) {
+                            $(".minus").css('visibility', 'hidden')
+                        } else {
+                        }
+                        $('.price_sum').text("$ " + price)
+
+
+                    })
+                    console.log(price);
+
+                    let deleteItem = document.querySelector('.delete')
+
+                    console.log(deleteItem);
+                    deleteItem.addEventListener('click', () => {
+                        cart.forEach((value, key) => {
+                            if (value.id === `${e.id}`)
+                                delete cart[key]
+
+
+                        })
+                    })
+
+
+                });
+
+
+            })
+
 
         })
+
         .then(() => {
+
+
             // modal
-            const modal = document.querySelector('.modal-content');
+            const modal = document.querySelector('#modal1 .modal-content');
             let modal_new = document.querySelector('#modal1');
             let md_new = modal_new.classList.add('modal_new');
             let itemCard = document.querySelectorAll('.item_box_card');
+
+
             // console.log(priceNew);
 
             itemCard.forEach(item => {
+
                 item.addEventListener('click', (e) => {
-                    e.stopPropagation();
+
                     let priceNew = item.querySelector('.new_price_jeans');
                     let priceOld = item.querySelector('.old_price_jeans')
                     let productName = item.querySelector('.product_name');
@@ -66,8 +148,7 @@ $(document).ready(function () {
                     modal.innerHTML = `
                     <h4>${productName.innerText}</h4>
                     <div class='modal_content'> 
-                      
-                        <img class="modalImg"src='${image.src}'> 
+                        <img class="modalImg" src='${image.src}'> 
                         <div class="modal_desc">
                         <div class="modal_prices">
                         <span class='old_price_modal'>${priceOld.innerText}</span>
@@ -90,10 +171,27 @@ $(document).ready(function () {
                         
                     </div>
             `
+                    // cart.forEach((e) => {
+
+                    //     modal2.innerHTML += `
+                    //             <div class='cart_box'>
+                    //             <span><i class="fas fa-trash-alt"></i></span>
+                    //             <img class="cart_img"src='${e.imageUrls[0]}'>
+                    //             <p>${e.currentPrice}</p>
+
+                    //             </div>`
+
+                    //     console.log(cart);
+
+
+                    // })
                 })
 
             })
+
         })
+
+
         .then(() => {
 
 
