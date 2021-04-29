@@ -35,21 +35,38 @@ $(document).ready(function() {
                 `
                 postImg(element.imageUrls)
 
-                let addCard = document.querySelector(`#${element.id} .addCard`);
+                let addCardBtns = document.querySelectorAll(`.addCard`);
 
-                addCard.addEventListener('click', (e) => {
-                    console.log(e)
-                    if (addCard.style.color == "red") {
-                        addCard.style.color = "black"
-                        cart.forEach((value, key) => {
-                            if (value.id === `${element.id}`)
-                                delete cart[key]
-                        })
-                    } else {
-                        addCard.style.color = "red"
-                        cart.push(element);
-                    }
+                addCardBtns.forEach((item)=> {
+                    item.addEventListener('click', ()=> {
+                        if (item.style.color == "red") {
+                            item.style.color = "black"
+                            cart.forEach((value, key) => {
+                                if (value.id === `${element.id}`)
+                                    delete cart[key]
+                            })
+                        } else {
+                            item.style.color = "red"
+                            cart.push(element);
+                        }
+                    })
                 })
+
+                // let addCard = document.querySelector(`#${element.id} .addCard`);
+
+                // addCard.addEventListener('click', (e) => {
+                //     console.log(add)
+                //     if (addCard.style.color == "red") {
+                //         addCard.style.color = "black"
+                //         cart.forEach((value, key) => {
+                //             if (value.id === `${element.id}`)
+                //                 delete cart[key]
+                //         })
+                //     } else {
+                //         addCard.style.color = "red"
+                //         cart.push(element);
+                //     }
+                // })
 
             });
         }).then(() => {
@@ -109,7 +126,6 @@ $(document).ready(function() {
                 slidesToShow: 1,
             });
 
-
         })
 
     let postImg = (array) => {
@@ -126,3 +142,4 @@ $(document).ready(function() {
     }
 
 });
+

@@ -103,65 +103,65 @@ fetch(`catalog.json`)
             })
         })
     })
-    .then(()=> {
-        let modalContentStore = document.querySelector('#modal2 .modal-content');
-        let hoodieContainer = document.querySelectorAll('.hoodieContainer');
-
-        hoodieContainer.forEach((link)=>{
-            let modalSkirtImg = link.querySelector('.hoodieImage').src;
-            let productHoodieName = link.querySelector('.hoodie_name').innerText;
-            let productHoodieColor = link.querySelector('.color-hoodie').innerText;
-            let currentPriceHoodie = link.querySelector('.currentPrice-hoodie').innerText;
-
-            modalContentStore.innerHTML = `
-            <h6 style="font-size: 22px; margin: 0; opacity: 0.4; font-weight: bold;">Shopping bag</h6>
-            <div class="mainContentModalStore" style="display: flex; align-items: center;">
-               <div class="iconsModalStore marginBlocks" style="display: flex; font-size: 20px;">
-                <p style="margin-right: 30px;"><i class="fas fa-times"></i></p>
-                <p><i class="fas fa-heart"></i></p>
-                </div>
-                
-               <div class="modalInfoBlock marginBlocks" style="width: 400px; display: flex;">
-               <div>
-                <img class="modalImgHoodie" style="width: 150px;" src="${modalSkirtImg}" alt="Product">
-                </div>
-                <div style="margin-top: 50px;">
-                    <p class="modalInfo" style="display: flex; flex-direction: column;">${productHoodieName}<span style="opacity: 0.5;">${productHoodieColor}</span></p>
-                    </div>
-               </div>
-               
-              <div class="plusMinesModalStore marginBlocks" style="font-size: 25px; display: flex; align-items: center;">
-                <button id="countPlus" class="modalSecondBtn" style="margin-right: 15px;">+</button>
-                <p class="resultPlusMines">0</p>
-                <button id="countMines" disabled="disabled" class="modalSecondBtn" style="margin-left: 15px;">-</button>
-              </div>
-              
-            <div class="finnalSummModalStore marginBlocks">
-              <p id="finalSummModal" style="font-size: 18px;">${currentPriceHoodie}</p>
-            </div>
-             </div>
-             </div>
-            `
-            let countPlus = document.querySelector('#countPlus');
-            let countMines = document.querySelector('#countMines');
-            let resultPlusMines = document.querySelector('.resultPlusMines');
-            let finalSummModal = document.querySelector('#finalSummModal');
-            let count = 0;
-            countPlus.addEventListener('click', ()=> {
-                resultPlusMines.innerText = count+=1
-                if(count > 0) {
-                    countMines.removeAttribute("disabled");
-                }else{}
-            })
-
-            countMines.addEventListener('click', ()=> {
-                resultPlusMines.innerText = count-=1
-                if(count <= 0) {
-                    countMines.setAttribute("disabled", "disabled");
-                }else{}
-            })
-        })
-    })
+    // .then(()=> {
+    //     let modalContentStore = document.querySelector('#modal2 .modal-content');
+    //     let hoodieContainer = document.querySelectorAll('.hoodieContainer');
+    //
+    //     hoodieContainer.forEach((link)=>{
+    //         let modalSkirtImg = link.querySelector('.hoodieImage').src;
+    //         let productHoodieName = link.querySelector('.hoodie_name').innerText;
+    //         let productHoodieColor = link.querySelector('.color-hoodie').innerText;
+    //         let currentPriceHoodie = link.querySelector('.currentPrice-hoodie').innerText;
+    //
+    //         modalContentStore.innerHTML = `
+    //         <h6 style="font-size: 22px; margin: 0; opacity: 0.4; font-weight: bold;">Shopping bag</h6>
+    //         <div class="mainContentModalStore" style="display: flex; align-items: center;">
+    //            <div class="iconsModalStore marginBlocks" style="display: flex; font-size: 20px;">
+    //             <p style="margin-right: 30px;"><i class="fas fa-times"></i></p>
+    //             <p><i class="fas fa-heart"></i></p>
+    //             </div>
+    //
+    //            <div class="modalInfoBlock marginBlocks" style="width: 400px; display: flex;">
+    //            <div>
+    //             <img class="modalImgHoodie" style="width: 150px;" src="${modalSkirtImg}" alt="Product">
+    //             </div>
+    //             <div style="margin-top: 50px;">
+    //                 <p class="modalInfo" style="display: flex; flex-direction: column;">${productHoodieName}<span style="opacity: 0.5;">${productHoodieColor}</span></p>
+    //                 </div>
+    //            </div>
+    //
+    //           <div class="plusMinesModalStore marginBlocks" style="font-size: 25px; display: flex; align-items: center;">
+    //             <button id="countPlus" class="modalSecondBtn" style="margin-right: 15px;">+</button>
+    //             <p class="resultPlusMines">0</p>
+    //             <button id="countMines" disabled="disabled" class="modalSecondBtn" style="margin-left: 15px;">-</button>
+    //           </div>
+    //
+    //         <div class="finnalSummModalStore marginBlocks">
+    //           <p id="finalSummModal" style="font-size: 18px;">${currentPriceHoodie}</p>
+    //         </div>
+    //          </div>
+    //          </div>
+    //         `
+    //         let countPlus = document.querySelector('#countPlus');
+    //         let countMines = document.querySelector('#countMines');
+    //         let resultPlusMines = document.querySelector('.resultPlusMines');
+    //         let finalSummModal = document.querySelector('#finalSummModal');
+    //         let count = 0;
+    //         countPlus.addEventListener('click', ()=> {
+    //             resultPlusMines.innerText = count+=1
+    //             if(count > 0) {
+    //                 countMines.removeAttribute("disabled");
+    //             }else{}
+    //         })
+    //
+    //         countMines.addEventListener('click', ()=> {
+    //             resultPlusMines.innerText = count-=1
+    //             if(count <= 0) {
+    //                 countMines.setAttribute("disabled", "disabled");
+    //             }else{}
+    //         })
+    //     })
+    // })
     .then(() => {
         let slicks = $('.single-itemHoodie');
         slicks.slick({
