@@ -39,12 +39,15 @@
 .hoodie-display {
     display: none;
 }
-.modalImgHoodie {
-    width: 300px;
-}
 .marginBlocks {
     margin: 0 20px;
+    display: flex;
+    align-items: center;
 }
-.modalSecondBtn {
+.btnInModal {
+    margin: 0 5px;
+    padding: 0;
+}
+.btnModalPlusMines {
     cursor: pointer;
 }

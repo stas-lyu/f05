@@ -45,28 +45,79 @@ fetch(`catalog.json`)
 
             let addCartHoodie = document.querySelector(`#${element.id} .addCartHoodie`);
 
-            addCartHoodie.addEventListener('click',()=> {
+            addCartHoodie.addEventListener('click', () => {
                 if (addCartHoodie.style.color === "red") {
                     addCartHoodie.style.color = "black"
                     carts.forEach((value, key) => {
                         if (value.id === `${element.id}`)
                             delete carts[key]
-                        console.log(carts)
                     })
-                } else{
+                } else {
                     addCartHoodie.style.color = "red"
                     carts.push(element);
-                    console.log(carts)
                 }
             })
         });
+
+        const modalHoodieSecond = document.querySelector("#modal2 .modal-content");
+        const cardBoxHoodie = document.querySelector('#card_box');
+        const shoppBagHoodie = document.querySelector('.shopping_bag')
+
+        cardBoxHoodie.addEventListener('click', () => {
+
+            shoppBagHoodie.innerHTML=``;
+            carts.forEach((item) => {
+
+                shoppBagHoodie.innerHTML += `
+                      <div class='marginBlocks'>
+                          <div class="iconsModal" style="margin: 0 10px">
+                            <span class='delete'><i class="fas fa-trash-alt"></i></span>
+                           </div>
+                           <div class="imgModalBlock" style="margin: 0 10px">
+                           <img class="cart_img"src='${item.imageUrls[0]}'> 
+                           </div>
+                        <div class='modalNameHoodie' style="width: 250px; margin: 0 10px;">
+                        <p style="padding: 0; margin: 0;">${item.name}</p>
+                        <p style="padding: 0; margin: 0;">${item.color}</p>
+                        </div>
+                        <div class="countHoodie">
+                                <span class="minusModalHoodie btnModalPlusMines"><i class="fas fa-minus"></i></span>
+                                <input class="counter" type="text" value="1">
+                                <span class="plusModalHoodie btnModalPlusMines"><i class="fas fa-plus"></i></span>
+                              </div>
+                            <div class="finnalSummModalStore marginBlocks">
+                              <p id="price_sum" style="font-size: 18px;">${item.currentPrice}₴</p>
+                            </div>
+                        </div>
+                      </div>
+                    `
+                    let priceHoodie = item.currentPrice;
+                
+                    $(".plusModalHoodie").click(function () {
+                        priceHoodie += item.currentPrice;
+                        $(".counter").attr('value', parseInt($(".counter").val()) + 1);
+                        $(".minusModalHoodie").css('visibility', 'visible')
+                        $('#price_sum').text("$ " + priceHoodie)
+
+                    });
+                    $(".minusModalHoodie").click(function () {
+                        priceHoodie -= item.currentPrice;
+                        $(".counter").attr('value', parseInt($(".counter").val()) - 1);
+                        if ($(".counter").val() == 0) {
+                            $(".minusModalHoodie").css('visibility', 'hidden')
+                        } else {
+                        }
+                        $('#price_sum').text("$ " + priceHoodie)
+                    })
+            });
+        })
     })
     .then(()=> {
         const modalHoodie = document.querySelector('.modal-content');
         let hoodieContainer = document.querySelectorAll('.hoodieContainer');
 
-        hoodieContainer.forEach((link)=>{
-            link.addEventListener('click', ()=>{
+        hoodieContainer.forEach((link) => {
+            link.addEventListener('click', () => {
                 let productHoodieCurrentPrice = link.querySelector('.currentPrice-hoodie').innerText;
                 let productHoodieName = link.querySelector('.hoodie_name').innerText;
                 let productHoodieBrand = link.querySelector('.brand-hoodie').innerText;
@@ -78,7 +129,7 @@ fetch(`catalog.json`)
                 let modalSkirtGallery = link.querySelector('.single-itemHoodie').innerHTML;
                 let modalSkirtImg = link.querySelector('.hoodieImage').src;
 
-                modalHoodie.innerHTML =`
+                modalHoodie.innerHTML = `
                 <div class="modalSkirt row">
                  <div class="col s12 m6">
                 <img class="modalImgHoodie" src="${modalSkirtImg}" alt="Product"></div>
@@ -103,65 +154,6 @@ fetch(`catalog.json`)
             })
         })
     })
-    .then(()=> {
-        let modalContentStore = document.querySelector('#modal2 .modal-content');
-        let hoodieContainer = document.querySelectorAll('.hoodieContainer');
-
-        hoodieContainer.forEach((link)=>{
-            let modalSkirtImg = link.querySelector('.hoodieImage').src;
-            let productHoodieName = link.querySelector('.hoodie_name').innerText;
-            let productHoodieColor = link.querySelector('.color-hoodie').innerText;
-            let currentPriceHoodie = link.querySelector('.currentPrice-hoodie').innerText;
-
-            modalContentStore.innerHTML = `
-            <h6 style="font-size: 22px; margin: 0; opacity: 0.4; font-weight: bold;">Shopping bag</h6>
-            <div class="mainContentModalStore" style="display: flex; align-items: center;">
-               <div class="iconsModalStore marginBlocks" style="display: flex; font-size: 20px;">
-                <p style="margin-right: 30px;"><i class="fas fa-times"></i></p>
-                <p><i class="fas fa-heart"></i></p>
-                </div>
-                
-               <div class="modalInfoBlock marginBlocks" style="width: 400px; display: flex;">
-               <div>
-                <img class="modalImgHoodie" style="width: 150px;" src="${modalSkirtImg}" alt="Product">
-                </div>
-                <div style="margin-top: 50px;">
-                    <p class="modalInfo" style="display: flex; flex-direction: column;">${productHoodieName}<span style="opacity: 0.5;">${productHoodieColor}</span></p>
-                    </div>
-               </div>
-               
-              <div class="plusMinesModalStore marginBlocks" style="font-size: 25px; display: flex; align-items: center;">
-                <button id="countPlus" class="modalSecondBtn" style="margin-right: 15px;">+</button>
-                <p class="resultPlusMines">0</p>
-                <button id="countMines" disabled="disabled" class="modalSecondBtn" style="margin-left: 15px;">-</button>
-              </div>
-              
-            <div class="finnalSummModalStore marginBlocks">
-              <p id="finalSummModal" style="font-size: 18px;">${currentPriceHoodie}</p>
-            </div>
-             </div>
-             </div>
-            `
-            let countPlus = document.querySelector('#countPlus');
-            let countMines = document.querySelector('#countMines');
-            let resultPlusMines = document.querySelector('.resultPlusMines');
-            let finalSummModal = document.querySelector('#finalSummModal');
-            let count = 0;
-            countPlus.addEventListener('click', ()=> {
-                resultPlusMines.innerText = count+=1
-                if(count > 0) {
-                    countMines.removeAttribute("disabled");
-                }else{}
-            })
-
-            countMines.addEventListener('click', ()=> {
-                resultPlusMines.innerText = count-=1
-                if(count <= 0) {
-                    countMines.setAttribute("disabled", "disabled");
-                }else{}
-            })
-        })
-    })
     .then(() => {
         let slicks = $('.single-itemHoodie');
         slicks.slick({
@@ -180,4 +172,4 @@ fetch(`catalog.json`)
         slickArrow.forEach((item)=> {
             item.classList.add('slick-arrow-hoodie');
         })
-    })
+    });

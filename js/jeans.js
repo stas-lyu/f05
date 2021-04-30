@@ -60,7 +60,7 @@ $(document).ready(function () {
             cardBox.addEventListener('click', () => {
 
 
-                shoppBag.innerHTML = ``;
+                // shoppBag.innerHTML = ``;
                 cart.forEach((e) => {
 
                     shoppBag.innerHTML += `
