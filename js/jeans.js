@@ -45,18 +45,6 @@ $(document).ready(function () {
     function render(el, item) {
         let container = document.createElement('div').classList.add('.cart_box');
 
-        let deleteBtn = document.createElement('span');
-        let img = document.createElement('img');
-        img.src = item.imageUrls[0]
-        let id = item.id;
-
-        deleteBtn.addEventListener('click', deleteCartItem(id, el))
-
-        container.append(deleteBtn, img)
-
-    }
-
-
         el.innerHTML += `
                         <div class='cart_box'>
                         <span id="delete_${item.id}" class='delete'><i class="fas fa-trash-alt"></i></span>
@@ -75,9 +63,22 @@ $(document).ready(function () {
                        
                         </div>
                     `
+        // let deleteBtn = document.createElement('span');
+        // let img = document.createElement('img');
+        // img.src = item.imageUrls[0]
+        // let id = item.id;
+        //
+        // deleteBtn.addEventListener('click', deleteCartItem(id, el))
+        //
+        // container.append(deleteBtn, img)
 
-        deleteCartItem(document.querySelector(`#delete_${item.id}`), `${item.id}`, el)
     }
+
+
+
+
+        // deleteCartItem(document.querySelector(`#delete_${item.id}`), `${item.id}`, el)
+
 
     function renderCart(cart) {
         cart.forEach((e)=> {
