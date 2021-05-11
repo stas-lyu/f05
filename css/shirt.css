@@ -8,16 +8,44 @@
     font-weight: 200;
 }
 
+.shirt-brand {
+    display: none;
+}
+
+.shirt-brand-modal {
+    display: block;
+}
+
+.shirt-color {
+    display: none;
+}
+
+.shirt-color-modal {
+    display: block;
+}
+
+.shirt-discription {
+    display: none;
+}
+
+.shirt-discription-modal {
+    display: block;
+}
+
 .shirtNameModal {
     font-weight: 500;
 }
 
 .price {
-    margin: 10px 0;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
 }
 
 .newPrice {
+    font-size: 1.4rem;
     font-weight: bolder;
+    padding: 0 10px;
 }
 
 .newPriceModal {
@@ -28,10 +56,6 @@
 .oldPrice {
     text-decoration: line-through;
     opacity: 0.6;
-}
-
-.modalInfo {
-    display: none;
 }
 
 .modal-img {
@@ -46,4 +70,77 @@
 
 .modalBox {
     font-size: 1.2em;
+}
+
+.count {
+    display: flex;
+    padding: 20px 0px 20px 20px;
+    align-items: center;
+}
+
+.counter {
+    width: 35px !important;
+    margin: 0px 20px !important;
+    text-align: center !important;
+}
+
+.count>button {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(231, 231, 231);
+    border: none;
+}
+
+.modal_desc>p {
+    padding-left: 20px;
+}
+
+.inputs {
+    padding-left: 20px;
+}
+
+.modal_new {
+    max-height: 100%;
+    top: 5% !important;
+}
+
+#button_send,
+#button_buy {
+    width: 100px;
+    height: 40px;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+#button_buy {
+    margin: 20px 0 0 75px;
+}
+
+.cart_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.shopping_bag {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cart_img {
+    width: 100px;
+    height: 100px;
+}
+
+.modal2_name_color {
+    display: flex;
+    flex-direction: column;
+}
+
+.priceCalc {
+    width: 20%;
+    margin: 0 0 0 20px;
 }
